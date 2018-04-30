@@ -1,0 +1,45 @@
+@import "~antd/dist/antd.css";
+.sider{
+    background-color: #FFD600;
+}
+.menu-divider{
+    color:#F9A825
+}
+.menu{
+    background-color:#FFD600 ;
+    color: black;
+}
+.menu-item{
+    background-color: #F9A825;
+}
+.menu-title{
+    font-size: 18px;
+    text-align: center;
+}
+/*selected menu option color*/
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    background-color: #FFFDE7;
+    color:black;
+}
+
+/*border color of selected menu*/
+.ant-menu-vertical .ant-menu-item:after, .ant-menu-vertical-left .ant-menu-item:after, .ant-menu-vertical-right .ant-menu-item:after, .ant-menu-inline .ant-menu-item:after{
+    border-right: 3px solid black;
+}
+.ant-menu-item:hover{
+    color: red  ;
+}
+.logo {
+    height: 32px;
+    background: rgba(255,255,255,.2);
+    margin: 16px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.header-title{
+    margin-left: 5%;
+    font-size: 20px;
+    color: black;
+}
