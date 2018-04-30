@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css'
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu, Icon, Button } from 'antd';
 const { Header, Content, Footer, Sider } = Layout;
 
 export default class app extends Component{
@@ -36,12 +36,27 @@ export default class app extends Component{
               <Layout style={layoutStyle}>
 
                   <Header style={headerStyle}>
-                      <div className={"header-title"}>TireOutlet</div>
+                      <div>
+                          <span id={"header-title"}>Tire Outlet Truck Bus & Car</span>
+                          <span id={"header-login"}> <Button>Login</Button></span>
+                      </div>
                   </Header>
 
                   <Content style={contentStyle}>
                       <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
                           {this.renderContent()}
+                          ...
+                          <br />
+                          Really
+                          <br />...<br />...<br />...<br />
+                          long
+                          <br />...<br />...<br />...<br />...<br />...<br />...
+                          <br />...<br />...<br />...<br />...<br />...<br />...
+                          <br />...<br />...<br />...<br />...<br />...<br />...
+                          <br />...<br />...<br />...<br />...<br />...<br />...
+                          <br />...<br />...<br />...<br />...<br />...<br />...
+                          <br />...<br />...<br />...<br />...<br />...<br />...
+                          <br />...<br />...<br />...<br />...<br />...<br />
                       </div>
                   </Content>
 

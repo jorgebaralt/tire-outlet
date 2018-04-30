@@ -27,7 +27,7 @@
     border-right: 3px solid black;
 }
 .ant-menu-item:hover{
-    color: red  ;
+    color: #E64A19;
 }
 .logo {
     height: 32px;
@@ -38,8 +38,18 @@
     color: black;
 }
 
-.header-title{
-    margin-left: 5%;
+#header-title{
+    margin-left: 2.5%;
     font-size: 20px;
+    color: black;
+    text-align: left;
+}
+#header-login{
+    text-align: end ;
+    margin-left: 60%;
+
+}
+#header-login .ant-btn{
+
     color: black;
 }
