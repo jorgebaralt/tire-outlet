@@ -16,6 +16,10 @@
     font-size: 18px;
     text-align: center;
 }
+/*submenu*/
+.ant-menu-sub.ant-menu-inline{
+    background-color: #FFF176;
+}
 /*selected menu option color*/
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
     background-color: #FFFDE7;

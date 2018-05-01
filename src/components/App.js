@@ -1,15 +1,33 @@
 import React, {Component} from 'react';
 import '../App.css'
+import Home from './Home';
+import CarServices from './CarServices';
+import OilChange from './OilChange';
+import {selectMenuOption} from "../actions";
+import {connect} from 'react-redux';
 import { Layout, Menu, Icon, Button } from 'antd';
+
 const { Header, Content, Footer, Sider } = Layout;
+const {SubMenu} = Menu;
 
-export default class app extends Component{
+
+class App extends Component{
     onMenuClicked({key}){
-        console.log( key+ "selected")
-
+        this.props.selectMenuOption(key);
     }
     renderContent(){
-        return(<div>Select what to render</div>)
+        const {selectedMenu} = this.props;
+        switch (selectedMenu){
+            case 'home':
+                return(<Home/>);
+            case 'oilChange':
+                return(<OilChange/>);
+            case 'carServices':
+                return(<CarServices/>);
+            default:
+                return(<div>Please Select from Menu</div>);
+        }
+
     }
 
     render(){
@@ -20,15 +38,18 @@ export default class app extends Component{
                   {/*TODO : maybe logo here*/}
                   <div className="logo">Tire Outlet Logo</div>
 
-                  <Menu className="menu" mode="inline" onSelect={this.onMenuClicked.bind(this)} defaultSelectedKeys={['home']} >
+                  <Menu className="menu" mode="inline" onClick={this.onMenuClicked.bind(this)} defaultSelectedKeys={['home']} >
                       <Menu.Item key="home">
                           <Icon type="home" />
                           <span className="nav-text">Home</span>
                       </Menu.Item>
-                      <Menu.Item key="2">
-                          <Icon type="video-camera" />
-                          <span className="nav-text">nav 2</span>
-                      </Menu.Item>
+                      <SubMenu
+                          key="Services"
+                          title={<span><Icon type="setting" /><span>Services</span></span>}
+                      >
+                          <Menu.Item key="oilChange"><Icon type="filter"/>Oil Change</Menu.Item>
+                          <Menu.Item key="carServices"><Icon type="sync"/>Car Services</Menu.Item>
+                      </SubMenu>
 
                   </Menu>
               </Sider>
@@ -38,7 +59,7 @@ export default class app extends Component{
                   <Header style={headerStyle}>
                       <div>
                           <span id={"header-title"}>Tire Outlet Truck Bus & Car</span>
-                          <span id={"header-login"}> <Button>Login</Button></span>
+                          <span id={"header-login"}> <Button>Admin Login</Button></span>
                       </div>
                   </Header>
 
@@ -90,3 +111,11 @@ const styles={
         textAlign: 'center'
     }
 };
+
+function mapStateToProps(state){
+    return{
+        selectedMenu : state.selectedMenu
+    }
+}
+
+export default connect(mapStateToProps,{selectMenuOption})(App)

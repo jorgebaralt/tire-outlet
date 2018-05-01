@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
-const rootReducer = combineReducers({
-test:[]
-});
+import MenuReducer from './SelectFromMenuReducer'
 
-export default rootReducer;
+export default combineReducers({
+    selectedMenu: MenuReducer
+});

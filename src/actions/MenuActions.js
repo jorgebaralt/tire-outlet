@@ -1,7 +1,9 @@
 import {SELECT_MENU_OPTION} from "./types";
-export const selectMenuOption = ()=>{
-    return{
-        type:SELECT_MENU_OPTION,
-        payload: []
-    }
+
+export function selectMenuOption(key){
+    console.log("action creator called with key =>" + key);
+    return {
+        type : SELECT_MENU_OPTION,
+        payload : key
+    };
 };
