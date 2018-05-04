@@ -32,9 +32,14 @@
         border-right: 3px solid black;
     }
     /*on menu hover*/
-    .ant-menu-item:hover{
+    .ant-menu-item:hover, .ant-menu-submenu-title:hover, .ant-menu-item:hover{
         color: #E64A19;
     }
+    /*ARROW COLOR*/
+    .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after, .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before{
+        background: #E64A19;
+    }
+
     /*where logo stands in menu*/
     .logo {
         height: 40px;
@@ -45,20 +50,15 @@
         color: black;
     }
     /*HEADER*/
+    .ant-layout-header{
+        height: 10%;
+    }
     #header-title{
-        margin-left: 2.5%;
         font-size: 16px;
         color: black;
         text-align: left;
     }
-    #header-login{
-        text-align: right ;
-        margin-left: 60%;
 
-    }
-    #header-login .ant-btn{
-        color: black;
-    }
     /*BACK UP BUTTON*/
     .ant-back-top {
         bottom: 50px;
@@ -95,7 +95,6 @@
         background: gray;
         overflow: hidden;
         color: black;
-
     }
 
     /*text inside of the image*/
@@ -106,5 +105,5 @@
         width: 60%;
         align-content: center;
         margin-left: 20%;
-        padding-bottom: 5%;
+        padding-bottom: 2.5%;
     }

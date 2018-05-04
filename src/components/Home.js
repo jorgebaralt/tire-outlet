@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import {Carousel} from 'antd'
+import {Carousel, Card} from 'antd'
+const {Meta} = Card;
 class Home extends Component{
 
     render(){
@@ -12,6 +13,19 @@ class Home extends Component{
                         <div><h2>3</h2></div>
                     </Carousel>
                 </div>
+                <div>
+                    <Card
+                        hoverable
+                        style={{ width: 240 }}
+                        cover={<img alt="Oil" src='/src/images/oil.jpg' />}
+                    >
+                        <Meta
+                            title="Allignment"
+                            description="www.instagram.com"
+                        />
+                    </Card>
+                </div>
+
             </div>
 
         )

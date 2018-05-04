@@ -5,7 +5,7 @@ import CarServices from './CarServices';
 import OilChange from './OilChange';
 import {selectMenuOption} from "../actions";
 import {connect} from 'react-redux';
-import { Layout, Menu, Icon, Button, BackTop,Row, Col } from 'antd';
+import { Layout, Menu, Icon, Button, BackTop ,Row, Col } from 'antd';
 
 const { Header, Content, Footer, Sider } = Layout;
 const {SubMenu} = Menu;
@@ -46,12 +46,13 @@ class App extends Component{
       return(
 
           <Layout>
+              {/*Navigate up button*/}
               <div>
                   <BackTop visibilityHeight={100}>
                       <div className="ant-back-top-inner">UP</div>
                   </BackTop>
-
               </div>
+
               <Sider
                   trigger={null}
                   collapsible
@@ -59,7 +60,6 @@ class App extends Component{
                   className="sider"
                   style={siderStyle}
               >
-
                   {/*TODO : maybe logo here*/}
                   <div className="logo">Tire Outlet</div>
 
@@ -79,17 +79,21 @@ class App extends Component{
               </Sider>
 
               <Layout style={layoutStyle}>
-                  <Header style={headerStyle}>
-                    <Row>
-                          <Icon
-                              className="trigger"
-                              type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-                              onClick={this.toggle}
-                          />
-                          <span id={"header-title"}>Tire Outlet Truck Bus & Car</span>
-                          <span id={"header-login"}> <Button>Admin Login</Button></span>
-                    </Row>
-                  </Header>
+                  <div>
+                      <Header style={headerStyle}>
+                        <Row>
+                            <Col span={6}>
+                                <Icon
+                                    className="trigger"
+                                    type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
+                                    onClick={this.toggle}
+                                />
+                            </Col>
+                            <Col span={18}> <span id={"header-title"}>Tire Outlet Truck Bus & Car</span></Col>
+
+                        </Row>
+                      </Header>
+                  </div>
 
                   <Content style={contentStyle}>
                       <div>
@@ -110,7 +114,8 @@ class App extends Component{
                   </Content>
 
                   <Footer style={footerStyle}>
-                      Tire Outlet Truck Bus & Car @2018 by Jorge Baralt
+                      <div>Tire Outlet Truck Bus & Car @2018 by Jorge Baralt</div>
+                      {/*<a href='https://www.freepik.com/free-vector/car-repair-icons_1011157.htm'>Icons Designed by Freepik</a>*/}
                   </Footer>
               </Layout>
           </Layout>
