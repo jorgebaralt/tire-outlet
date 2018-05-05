@@ -1,8 +1,28 @@
 import React, {Component} from 'react'
-import {Carousel, Card} from 'antd'
-const {Meta} = Card;
-class Home extends Component{
+import {Carousel, Card, Row,Col} from 'antd';
 
+
+import oil from '../images/oil.jpg';
+
+const {Meta} = Card;
+
+class Home extends Component{
+    renderServices(){
+        return(
+            <Col>
+                <Card
+                    hoverable
+                    style={{ width: 300 }}
+                    cover={<img src={oil}/>}
+                >
+                    <Meta
+                        title="Oil Change"
+                        description="Services/Oil Change"
+                    />
+                </Card>
+            </Col>
+        )
+    }
     render(){
         return(
             <div>
@@ -13,18 +33,10 @@ class Home extends Component{
                         <div><h2>3</h2></div>
                     </Carousel>
                 </div>
-                <div>
-                    <Card
-                        hoverable
-                        style={{ width: 240 }}
-                        cover={<img alt="Oil" src='/src/images/oil.jpg' />}
-                    >
-                        <Meta
-                            title="Allignment"
-                            description="www.instagram.com"
-                        />
-                    </Card>
-                </div>
+
+                <Row>
+                    {this.renderServices()}
+                </Row>
 
             </div>
 

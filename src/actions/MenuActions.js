@@ -6,4 +6,4 @@ export function selectMenuOption(key){
         type : SELECT_MENU_OPTION,
         payload : key
     };
-};
+}

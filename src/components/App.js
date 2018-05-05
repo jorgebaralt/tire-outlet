@@ -5,7 +5,9 @@ import CarServices from './CarServices';
 import OilChange from './OilChange';
 import {selectMenuOption} from "../actions";
 import {connect} from 'react-redux';
-import { Layout, Menu, Icon, Button, BackTop ,Row, Col } from 'antd';
+import { Layout, Menu, Icon, BackTop ,Row, Col } from 'antd';
+import {Link, Route} from 'react-router-dom'
+
 
 const { Header, Content, Footer, Sider } = Layout;
 const {SubMenu} = Menu;
@@ -23,7 +25,7 @@ class App extends Component{
     };
 
     onMenuClicked({key}){
-        this.props.selectMenuOption(key);
+        // this.props.selectMenuOption(key);
     }
 
     renderContent(){
@@ -64,10 +66,10 @@ class App extends Component{
                   <div className="logo">Tire Outlet</div>
 
                   <Menu className="menu" mode="inline" onClick={this.onMenuClicked.bind(this)} defaultSelectedKeys={['home']} >
-                      <Menu.Item key="home">
-                          <Icon type="home" />
-                          <span className="nav-text">Home</span>
-                      </Menu.Item>
+                          <Menu.Item key="home">
+                              <Icon type="home" />
+                              <span className="nav-text">Home</span>
+                          </Menu.Item>
                       <SubMenu
                           key="Services"
                           title={<span><Icon type="setting" /><span>Services</span></span>}
@@ -83,11 +85,13 @@ class App extends Component{
                       <Header style={headerStyle}>
                         <Row>
                             <Col span={6}>
-                                <Icon
-                                    className="trigger"
-                                    type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-                                    onClick={this.toggle}
-                                />
+                                <div>
+                                    <Icon
+                                        className="trigger"
+                                        type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
+                                        onClick={this.toggle}
+                                    />
+                                </div>
                             </Col>
                             <Col span={18}> <span id={"header-title"}>Tire Outlet Truck Bus & Car</span></Col>
 
@@ -97,25 +101,17 @@ class App extends Component{
 
                   <Content style={contentStyle}>
                       <div>
-                          {this.renderContent()}
-                          ...
-                          <br />
-                          Really
-                          <br />...<br />...<br />...<br />
-                          long
-                          <br />...<br />...<br />...<br />...<br />...<br />...
-                          <br />...<br />...<br />...<br />...<br />...<br />...
-                          <br />...<br />...<br />...<br />...<br />...<br />...
-                          <br />...<br />...<br />...<br />...<br />...<br />...
-                          <br />...<br />...<br />...<br />...<br />...<br />...
-                          <br />...<br />...<br />...<br />...<br />...<br />...
-                          <br />...<br />...<br />...<br />...<br />...<br />
+                          {/*{this.renderContent()}*/}
+                          <Route>
+
+                          </Route>
+
                       </div>
                   </Content>
 
                   <Footer style={footerStyle}>
                       <div>Tire Outlet Truck Bus & Car @2018 by Jorge Baralt</div>
-                      {/*<a href='https://www.freepik.com/free-vector/car-repair-icons_1011157.htm'>Icons Designed by Freepik</a>*/}
+                      <a href='https://www.freepik.com/free-vector/car-repair-icons_1011157.htm'>Icons Designed by Freepik</a>
                   </Footer>
               </Layout>
           </Layout>
@@ -126,10 +122,12 @@ const styles={
     siderStyle:{
         overflow: 'auto',
         left: 0,
+        height: '100vh'
     },
     headerStyle:{
         background: '#fff',
-        padding: 0
+        padding: 0,
+
     },
     contentStyle:{
         margin: '24px 16px',
