@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
 import '../App.css'
+import CarServices from './TireServices';
+import Mechanic from './Mechanic'
+import LiftingKit from './LiftingKit';
 import Home from './Home';
-import CarServices from './CarServices';
 import OilChange from './OilChange';
-import {selectMenuOption} from "../actions";
-import {connect} from 'react-redux';
 import { Layout, Menu, Icon, BackTop ,Row, Col } from 'antd';
-import {Link, Route} from 'react-router-dom'
-
+import {Link, Route,Switch} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectMenuOption} from "../actions";
 
 const { Header, Content, Footer, Sider } = Layout;
 const {SubMenu} = Menu;
-
 
 class App extends Component{
     // react state to handle the sider collapse
@@ -24,27 +24,9 @@ class App extends Component{
         });
     };
 
-    onMenuClicked({key}){
-        // this.props.selectMenuOption(key);
-    }
-
-    renderContent(){
-        const {selectedMenu} = this.props;
-        switch (selectedMenu){
-            case 'home':
-                return(<Home/>);
-            case 'oilChange':
-                return(<OilChange/>);
-            case 'carServices':
-                return(<CarServices/>);
-            default:
-                return(<div>Please Select from Menu</div>);
-        }
-    }
-
     render(){
         const {siderStyle,headerStyle,contentStyle,layoutStyle,footerStyle} = styles;
-
+        const {selectedService} = this.props;
       return(
 
           <Layout>
@@ -61,30 +43,63 @@ class App extends Component{
                   collapsed={this.state.collapsed}
                   className="sider"
                   style={siderStyle}
+                  breakpoin={{xs : '600'}}
+
               >
                   {/*TODO : maybe logo here*/}
                   <div className="logo">Tire Outlet</div>
 
-                  <Menu className="menu" mode="inline" onClick={this.onMenuClicked.bind(this)} defaultSelectedKeys={['home']} >
-                          <Menu.Item key="home">
-                              <Icon type="home" />
-                              <span className="nav-text">Home</span>
-                          </Menu.Item>
+                  <Menu className="menu" mode="inline" selectedKeys={selectedService} defaultOpenKeys={['services']} onClick={({key})=>this.props.selectMenuOption(key)}>
+                      <Menu.Item key="home">
+                          <Link to="/" className={"menu-link"}>
+                          <Icon type="home" />
+                          <span className="nav-text">
+                              Home
+                          </span>
+                          </Link>
+                      </Menu.Item>
+
                       <SubMenu
-                          key="Services"
+                          key="services"
                           title={<span><Icon type="setting" /><span>Services</span></span>}
                       >
-                          <Menu.Item key="oilChange"><Icon type="filter"/>Oil Change</Menu.Item>
-                          <Menu.Item key="carServices"><Icon type="sync"/>Car Services</Menu.Item>
+                          <Menu.Item key="oil-change">
+                              <Link to="/services/oil-change" className={"menu-link"}>
+                                  <Icon type="filter"/>
+                                  <span>Oil Change</span>
+                              </Link>
+                          </Menu.Item>
+
+                          <Menu.Item key="tire-services">
+                              <Link to="/services/tire-services" className={"menu-link"} >
+                                  <Icon type="sync"/>
+                                  <span>Tire Services</span>
+                              </Link>
+                          </Menu.Item>
+
+                          <Menu.Item key="mechanic">
+                              <Link to="/services/mechanic" className={"menu-link"} >
+                                  <Icon type="tool"/>
+                                  <span>Mechanic</span>
+                              </Link>
+                          </Menu.Item>
+
+                          <Menu.Item key="lift">
+                              <Link to="/services/lift" className={"menu-link"} >
+                                  <Icon type="car"/>
+                                  <span>Lifting Kit</span>
+                              </Link>
+                          </Menu.Item>
+
+
                       </SubMenu>
                   </Menu>
               </Sider>
-
               <Layout style={layoutStyle}>
                   <div>
                       <Header style={headerStyle}>
                         <Row>
-                            <Col span={6}>
+                            <Col sm={3} xl={1}>
                                 <div>
                                     <Icon
                                         className="trigger"
@@ -93,7 +108,7 @@ class App extends Component{
                                     />
                                 </div>
                             </Col>
-                            <Col span={18}> <span id={"header-title"}>Tire Outlet Truck Bus & Car</span></Col>
+                            <Col sm={21} xl={23}> <span id={"header-title"}>Tire Outlet Truck-Bus&Car</span></Col>
 
                         </Row>
                       </Header>
@@ -101,11 +116,13 @@ class App extends Component{
 
                   <Content style={contentStyle}>
                       <div>
-                          {/*{this.renderContent()}*/}
-                          <Route>
-
-                          </Route>
-
+                          <Switch>
+                              <Route path="/services/oil-change" component={OilChange} />
+                              <Route path="/services/tire-services" component={CarServices} />
+                              <Route path="/services/mechanic" component={Mechanic} />
+                              <Route path="/services/lift" component={LiftingKit} />
+                              <Route path="/" component={Home} />
+                          </Switch>
                       </div>
                   </Content>
 
@@ -122,12 +139,11 @@ const styles={
     siderStyle:{
         overflow: 'auto',
         left: 0,
-        height: '100vh'
+        height: 'auto'
     },
     headerStyle:{
         background: '#fff',
         padding: 0,
-
     },
     contentStyle:{
         margin: '24px 16px',
@@ -142,8 +158,8 @@ const styles={
 
 function mapStateToProps(state){
     return{
-        selectedMenu : state.selectedMenu
+        selectedService : state.selectedService
     }
 }
 
-export default connect(mapStateToProps,{selectMenuOption})(App)
+export default connect(mapStateToProps, {selectMenuOption})(App);

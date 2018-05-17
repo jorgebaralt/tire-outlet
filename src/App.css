@@ -1,5 +1,17 @@
 @import "~antd/dist/antd.css";
 /*Navigation menu */
+    .menu-link{
+        color:black;
+    }
+    .menu-link:hover{
+        color: #E64A19;
+    }
+    .ant-menu-item-selected > a, .ant-menu-item-selected > a:hover{
+        color:black;
+    }
+    .ant-menu-item > a:hover{
+        color: #E64A19;
+    }
     .sider{
         background-color: #FFD600;
     }
@@ -85,8 +97,8 @@
         color: #FFD600;
     }
 
-/*CAROUSEL AT HOME*/
-    /*size of image*/
+/*HOME*/
+    /*Carousel Size*/
     .ant-carousel .slick-slide {
         text-align: center;
         height: 300px;
@@ -97,13 +109,25 @@
         color: black;
     }
 
-    /*text inside of the image*/
+    /*text inside of Carousel*/
     .ant-carousel .slick-slide h2 {
         color: black;
     }
+
     #home-carousel{
-        width: 60%;
+        width: 70%;
         align-content: center;
-        margin-left: 20%;
+        margin-left: 15%;
         padding-bottom: 2.5%;
+    }
+    .home-services{
+        align-items: center;
+        margin-left: 4%;
+    }
+    .home-service{
+        margin: 4%;
+    }
+    #map{
+        height: 300px;
+        width: auto;
     }

@@ -1,6 +1,8 @@
 import {combineReducers} from 'redux';
-import MenuReducer from './SelectFromMenuReducer'
+import HomeServices from './reducer_home_services';
+import SelectedService from './reducer_selected_services';
 
 export default combineReducers({
-    selectedMenu: MenuReducer
+    services: HomeServices,
+    selectedService:SelectedService
 });
