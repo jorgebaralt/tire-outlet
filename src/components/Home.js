@@ -3,6 +3,7 @@ import {Carousel, Card, Row,Col} from 'antd';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom'
 import {selectMenuOption} from "../actions";
+import SnapBanner from './SnapBanner'
 /*global google*/
 const {Meta} = Card;
 
@@ -58,9 +59,23 @@ class Home extends Component{
                     {this.renderServices()}
                 </Row>
 
+                <Row style={{marginBottom:'5%',marginLeft:'2%',marginRight:'2%'}}>
+                    <Col xl={12} m={24}>
+                        <SnapBanner/>
+                    </Col>
+                    <Col xl={12} m={24}>
+                        <div style={{marginLeft:'5%',marginTop:'3%'}}>
+                            <h4 className={'snap-list'}><span className={'snap-bold'}>Financing in a Snap!</span> Up to 80% Approval Rate</h4>
+                            <h4 className={'snap-list'}><span className={'snap-bold'}>Apply Today</span> Bad Credit, No Credit, OK!</h4>
+                            <h4 className={'snap-list'}><span className={'snap-bold'}>Finance up to $3000 Today</span>, And Shop Right Away</h4>
+                            <h4 className={'snap-list'}><span className={'snap-bold'}>Buy today</span>. Pay over 12 months.</h4>
+                        </div>
+                    </Col>
+                </Row>
+
                 <Row>
                     <Col xl={12} sm={24}>
-                        <Card title="Contact us" style={{ width: 'auto', height:441}}>
+                        <Card title="Contact us" style={{ width: 'auto', height:441,fontSize:18}}>
                             <p><strong>Phone number:</strong> 407-888-9918 </p>
                             <p><strong>Email:</strong> tireoutletfl@gmail.com</p>
 
@@ -68,7 +83,7 @@ class Home extends Component{
                     </Col>
 
                     <Col xl={12} sm={24}>
-                        <Card title="Direction" style={{width:'auto', height:'auto'}}>
+                        <Card title="Direction" style={{width:'auto', height:'auto', fontSize:18}}>
                             <p><strong>Address:</strong> 5495 S Orange Blossom Trail, Orlando, FL 32839 </p>
                             <div id="map"> </div>
                         </Card>

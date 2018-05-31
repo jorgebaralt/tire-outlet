@@ -1,6 +1,10 @@
-import React from 'react';
+import React , {Component} from 'react';
 
-const Mechanic = () =>{
-    return(<div>Mechanic</div>)
-};
+class Mechanic extends Component{
+    render(){
+        return(
+            <h1>Mechanic</h1>
+        )
+    }
+}
 export default Mechanic;

@@ -131,3 +131,33 @@
         height: 300px;
         width: auto;
     }
+/*OIL CHANGE*/
+    .oil-list:hover{
+        background: #FFD600;
+        color: #000;
+    }
+    .oil-list{
+        font-size: 18px;
+    }
+    .list-group-item{
+        font-size: 18px;
+    }
+    #why-oil{
+        margin-top: 2%;
+    }
+/*TIRE SERVICE*/
+    .tire-service-price{
+        margin-top: 6%;
+    }
+
+/*SNAP*/
+    .snap-list{
+        margin-top: 1%;
+        color: #000;
+        font-size: 28px;
+        text-align: left;
+    }
+    .snap-bold{
+        font-weight: bold;
+        color: #F9A825;
+    }
