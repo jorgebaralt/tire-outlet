@@ -65,9 +65,9 @@ class Home extends Component{
                     </Col>
                     <Col xl={12} m={24}>
                         <div style={{marginLeft:'5%',marginTop:'3%'}}>
-                            <h4 className={'snap-list'}><span className={'snap-bold'}>Financing in a Snap!</span> Up to 80% Approval Rate</h4>
-                            <h4 className={'snap-list'}><span className={'snap-bold'}>Apply Today</span> Bad Credit, No Credit, OK!</h4>
-                            <h4 className={'snap-list'}><span className={'snap-bold'}>Finance up to $3000 Today</span>, And Shop Right Away</h4>
+                            <h4 className={'snap-list'}><span className={'snap-bold'}>Financing with Snap!</span> Up to 80% Approval Rate</h4>
+                            <h4 className={'snap-list'}><span className={'snap-bold'}>Apply Today</span> Bad Credit or No Credit? is OK!</h4>
+                            <h4 className={'snap-list'}><span className={'snap-bold'}>You can Finance up to $3000 Today</span>, And Shop Right Away</h4>
                             <h4 className={'snap-list'}><span className={'snap-bold'}>Buy today</span>. Pay over 12 months.</h4>
                         </div>
                     </Col>
