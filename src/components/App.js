@@ -9,6 +9,7 @@ import { Layout, Menu, Icon, BackTop ,Row, Col } from 'antd';
 import {Link, Route,Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {selectMenuOption} from "../actions";
+import Logo from '../images/TireOutletLogo.jpeg';
 
 const { Header, Content, Footer, Sider } = Layout;
 const {SubMenu} = Menu;
@@ -47,10 +48,10 @@ class App extends Component{
 
               >
                   {/*TODO : maybe logo here*/}
-                  <div className="logo">Tire Outlet</div>
+                  <div id="logo">Tire Outlet </div>
 
                   <Menu className="menu" mode="inline" selectedKeys={selectedService} defaultOpenKeys={['services']} onClick={({key})=>this.props.selectMenuOption(key)}>
-                      <Menu.Item key="home">
+                      <Menu.Item key="Home">
                           <Link to="/" className={"menu-link"}>
                           <Icon type="home" />
                           <span className="nav-text">
@@ -63,28 +64,28 @@ class App extends Component{
                           key="services"
                           title={<span><Icon type="setting" /><span>Services</span></span>}
                       >
-                          <Menu.Item key="oil-change">
+                          <Menu.Item key="Oil Change">
                               <Link to="/services/oil-change" className={"menu-link"}>
                                   <Icon type="filter"/>
                                   <span>Oil Change</span>
                               </Link>
                           </Menu.Item>
 
-                          <Menu.Item key="tire-services">
+                          <Menu.Item key="Tire Services">
                               <Link to="/services/tire-services" className={"menu-link"} >
                                   <Icon type="sync"/>
                                   <span>Tire Services</span>
                               </Link>
                           </Menu.Item>
 
-                          <Menu.Item key="mechanic">
+                          <Menu.Item key="Mechanic">
                               <Link to="/services/mechanic" className={"menu-link"} >
                                   <Icon type="tool"/>
                                   <span>Mechanic</span>
                               </Link>
                           </Menu.Item>
 
-                          <Menu.Item key="lift">
+                          <Menu.Item key="Lift Kits">
                               <Link to="/services/lift" className={"menu-link"} >
                                   <Icon type="car"/>
                                   <span>Lifting Kit</span>
@@ -108,7 +109,7 @@ class App extends Component{
                                     />
                                 </div>
                             </Col>
-                            <Col sm={21} xl={23}> <span id={"header-title"}>Tire Outlet Truck-Bus&Car</span></Col>
+                            <Col sm={21} xl={23}> <span id={"header-title"}> {selectedService} </span></Col>
 
                         </Row>
                       </Header>
@@ -149,7 +150,8 @@ const styles={
         margin: '24px 16px',
         padding: 24,
         background:'#fff',
-        textAlign: 'center'
+        textAlign: 'center',
+        minHeight: 750
     },
     footerStyle:{
         textAlign: 'center'

@@ -53,15 +53,19 @@
     }
 
     /*where logo stands in menu*/
-    .logo {
+    #logo {
         height: 40px;
         background: rgba(255,255,255,.2);
         margin: 16px;
         font-size: 18px;
         text-align: center;
         color: black;
+        padding-top: 3%;
+        font-weight: bold;
     }
     /*HEADER*/
+
+
     .ant-layout-header{
         height: 10%;
     }
@@ -98,6 +102,15 @@
     }
 
 /*HOME*/
+    #logo_img{
+        max-height: 80%;
+        max-width: 80%;
+        padding-bottom: 5%;
+    }
+    .carousel_img{
+        max-height: 100%;
+        max-width: 100%;
+    }
     /*Carousel Size*/
     .ant-carousel .slick-slide {
         text-align: center;
@@ -114,9 +127,8 @@
         color: black;
     }
 
-    #home-carousel{
-        width: 70%;
-        align-content: center;
+    .carousel{
+        width: 72%;
         margin-left: 15%;
         padding-bottom: 2.5%;
     }
@@ -132,6 +144,7 @@
         width: auto;
     }
 /*OIL CHANGE*/
+
     .oil-list:hover{
         background: #FFD600;
         color: #000;
@@ -149,6 +162,10 @@
     .tire-service-price{
         margin-top: 6%;
     }
+    .card-center {
+        float: none; /* Added */
+        margin: 0 auto 10px;
+    }
 
 /*SNAP*/
     .snap-list{
@@ -161,3 +178,10 @@
         font-weight: bold;
         color: #F9A825;
     }
+/*WHY LIFT*/
+
+/*GENERAL*/
+    .card-description{
+        font-size: 16px;
+    }
+

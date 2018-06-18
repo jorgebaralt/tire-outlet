@@ -37,7 +37,7 @@ class OilChange extends Component{
     render(){
         return(
             <div>
-                <Jumbotron title={"Oil Service"} description={"Description for Oil Service"}/>
+                <Jumbotron title={"Oil Service"} description={""}/>
                 <Row>
                     <Col xl={12} sm={24}>
                         {this.renderOilChangeOptions()}

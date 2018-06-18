@@ -10,28 +10,28 @@ export default ()=>{
             description:'Oil services Description',
             image: oil,
             url:'/services/oil-change',
-            key:'oil-change'
+            key:'Oil Change'
         },
         {
             title:'Tire Services',
             description:'Tire Services Description',
             image:tire,
             url:'/services/tire-services',
-            key:'tire-services'
+            key:'Tire Services'
         },
         {
             title:'Mechanic',
             description:'Mechanic Description',
             image:car,
             url:'/services/mechanic',
-            key:'mechanic'
+            key:'Mechanic'
         },
         {
             title:'Lifting kit',
             description:'Car Lifting',
             image:lift,
             url:'/services/lift',
-            key:'lift'
+            key:'Lift Kit'
         }
     ]
 }

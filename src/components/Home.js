@@ -4,6 +4,8 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom'
 import {selectMenuOption} from "../actions";
 import SnapBanner from './SnapBanner'
+import TireOutletLogo from '../images/TireOutletLogo.jpeg';
+import TireOutletHome from '../images/TireOutletHome.jpeg'
 /*global google*/
 const {Meta} = Card;
 
@@ -44,14 +46,9 @@ class Home extends Component{
     }
     render(){
         return(
-            <div>
-                <div id={"home-carousel"}>
-                    <Carousel autoplay>
-                        <div><h2>1</h2></div>
-                        <div><h2>2</h2></div>
-                        <div><h2>3</h2></div>
-                    </Carousel>
-                </div>
+            <div id={'home-test'}>
+
+                <div><img src={TireOutletLogo} alt="Logo" id={'logo_img'}/></div>
 
                 <h1 className={"page-title"}>Welcome to Tire Outlet, We offer the following Services:</h1>
 

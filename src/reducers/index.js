@@ -5,6 +5,7 @@ import OilOptions from './reducer_oil_services';
 import SelectedOil from './reducer_selected_oil'
 import TireServices from './reducer_tire_services'
 import MechanicServices from './reducer_mechanic_services'
+import WhyLift from './reducer_why_lift'
 
 export default combineReducers({
     services: HomeServices,
@@ -12,5 +13,6 @@ export default combineReducers({
     oilOptions:OilOptions,
     selectedOil:SelectedOil,
     tireServices: TireServices,
-    mechanicServices: MechanicServices
+    mechanicServices: MechanicServices,
+    whyLift: WhyLift
 });
