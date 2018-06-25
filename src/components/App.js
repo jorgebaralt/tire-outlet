@@ -9,7 +9,7 @@ import { Layout, Menu, Icon, BackTop ,Row, Col } from 'antd';
 import {Link, Route,Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {selectMenuOption} from "../actions";
-import Logo from '../images/TireOutletLogo.jpeg';
+
 
 const { Header, Content, Footer, Sider } = Layout;
 const {SubMenu} = Menu;

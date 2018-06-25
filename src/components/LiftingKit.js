@@ -1,8 +1,16 @@
 import React , {Component}from 'react';
-import {Carousel, Card, Row,Col} from 'antd';
+import { Card, Row, Col} from 'antd';
 import {connect} from 'react-redux'
 import Jumbotron from './Jumbotron'
-
+import Lift1 from '../images/Lift1.jpeg'
+import Lift2 from '../images/Lift2.jpeg'
+import Lift3 from '../images/Lift3.jpeg'
+import Lift4 from '../images/Lift4.jpeg'
+import Lift5 from '../images/Lift5.jpeg'
+import Lift6 from '../images/Lift6.jpeg'
+import Wheels1 from '../images/Wheels1.jpeg'
+import Wheels2 from '../images/Wheels2.jpeg'
+import Wheels3 from '../images/Wheels3.jpeg'
 
 class LiftingKit extends Component{
 
@@ -14,13 +22,55 @@ class LiftingKit extends Component{
                 <Row key={reason.title}>
 
                     <Card style={{ margin:'0 auto 1%', maxWidth:900} }>
-                        <Col xxl={12}><h2>{reason.title}</h2></Col>
-                        <Col xxl={11}><p className={'card-description'}>{reason.description}</p></Col>
+                        <Col xxl={14}><h2>{reason.title}</h2></Col>
+                        <Col xxl={10}><p className={'card-description'}>{reason.description}</p></Col>
                     </Card>
 
                 </Row>
             )
         })
+    }
+
+    renderImages(){
+        return(
+            <Row>
+                <Row>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Lift1} alt="Example 1" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Lift2} alt="Example 2" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Lift3} alt="Example 3" className={'work-img'}/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Lift4} alt="Example 1" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Lift5} alt="Example 2" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Lift6} alt="Example 3" className={'work-img'}/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Wheels1} alt="Example 1" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Wheels2} alt="Example 2" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Wheels3} alt="Example 3" className={'work-img'}/>
+                    </Col>
+                </Row>
+            </Row>
+
+
+        )
     }
 
     render(){
@@ -30,9 +80,11 @@ class LiftingKit extends Component{
                 <Jumbotron title={'Lifting Kits'} description={'We offer Big Tires, Suspension, Body Lifting, Wheels, of any type, brand. Feel free to come and ask for our prices and help'}/>
 
                 <h1>Why Should I Lift My Truck?</h1>
+                <hr/>
                 {this.renderWhyLift()}
                 <h1> Some of Our Work </h1>
-                <div>Render all images of trucks</div>
+                <hr/>
+                    {this.renderImages()}
             </div>
 
         )

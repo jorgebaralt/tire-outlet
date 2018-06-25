@@ -4,20 +4,20 @@ export default () => {
             id:0,
             price:'Starting at 34.99$',
             title:'Regular Oil',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries'
+            description:' It\'s a basic oil that doesn\'t have the special additives to make it more durable and long-lasting'
         },
         {
             id:1,
             price:'Starting at 44.99$',
             title:'High Mileage Oil',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries'
+            description:'We recommend high mileage oils for those vehicles with more than 75,000 miles, especially if they\'re driven an above-average number of miles, generally around 15,000 per year.'
 
         },
         {
             id:2,
             price:'Starting at 59.99$',
             title:'Full Synthetic Oil',
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries'
+            description:'It is the most expensive of all oils,but is the one with the most benefits and possibly save money over time. We recommend synthetic engine oils for newer and high-performance vehicles.'
 
         }
     ]

@@ -23,6 +23,13 @@ export default () =>{
             title:'Big Tires',
             description:'Lifting your trucks allows you to get even bigger tires. which makes the vehicle look AWESOME',
             img:'a'
+        },
+        {
+            id:4,
+            title:'Wheels',
+            description:'We also offer any type of wheels. not only for big trucks, but for any type of car. including luxury wheels.',
+            img:'a'
+
         }
     ]
 }

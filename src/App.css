@@ -102,6 +102,10 @@
     }
 
 /*HOME*/
+
+    .page-title{
+        margin:2.5%;
+    }
     #logo_img{
         max-height: 80%;
         max-width: 80%;
@@ -134,10 +138,10 @@
     }
     .home-services{
         align-items: center;
-        margin-left: 4%;
     }
     .home-service{
-        margin: 4%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
     #map{
         height: 300px;
@@ -179,6 +183,13 @@
         color: #F9A825;
     }
 /*WHY LIFT*/
+    .work-img{
+        height: auto;
+        max-width: 100%;
+        width: 350px;
+        margin: 2%;
+        border-radius: 8px;
+    }
 
 /*GENERAL*/
     .card-description{

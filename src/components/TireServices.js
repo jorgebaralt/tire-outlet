@@ -2,6 +2,12 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux';
 import {Row,Col,Card} from 'antd';
 import Jumbotron from './Jumbotron';
+import Tires1 from '../images/Tires4.jpeg'
+import Tires2 from '../images/Tires5.jpeg'
+import Allignment1 from '../images/Allignment.jpeg'
+import Allignment2 from '../images/Allignment2.jpeg'
+import TruckBalance from '../images/TruckBalance.jpeg'
+import Tires3 from '../images/Tires 3.jpeg'
 
 class CarServices extends Component{
 
@@ -23,12 +29,43 @@ class CarServices extends Component{
         })
     }
 
+    renderImages(){
+        return(
+            <Row>
+                <Row>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Tires1} alt="Example 1" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Allignment1} alt="Example 2" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={TruckBalance} alt="Example 3" className={'work-img'}/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Tires2} alt="Example 1" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Allignment2} alt="Example 2" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Tires3} alt="Example 3" className={'work-img'}/>
+                    </Col>
+                </Row>
+
+            </Row>
+        )
+    }
+
     render(){
         return(
             <div id={'tire-services'}>
                 <Jumbotron title={'Tire Services'} description={'We offer any size, brand, and type of tire, just feel free to come and ask for them. Here are some of the Services we offer for the tires'}/>
                 {this.renderTireServices()}
-                <h1>Deals</h1>
+                <hr/>
+                {this.renderImages()}
             </div>
         )
     };
