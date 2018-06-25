@@ -46,24 +46,24 @@ class LiftingKit extends Component{
                     </Col>
                 </Row>
                 <Row>
-                    <Col xxl={8} md={12} s={24}>
+                    <Col xxl={8} md={8} s={24}>
                         <img src={Lift4} alt="Example 1" className={'work-img'}/>
                     </Col>
-                    <Col xxl={8} md={12} s={24}>
+                    <Col xxl={8} md={8} s={24}>
                         <img src={Lift5} alt="Example 2" className={'work-img'}/>
                     </Col>
-                    <Col xxl={8} md={12} s={24}>
+                    <Col xxl={8} md={8} s={24}>
                         <img src={Lift6} alt="Example 3" className={'work-img'}/>
                     </Col>
                 </Row>
                 <Row>
-                    <Col xxl={8} md={12} s={24}>
+                    <Col xxl={8} md={8} s={24}>
                         <img src={Wheels1} alt="Example 1" className={'work-img'}/>
                     </Col>
-                    <Col xxl={8} md={12} s={24}>
+                    <Col xxl={8} md={8} s={24}>
                         <img src={Wheels2} alt="Example 2" className={'work-img'}/>
                     </Col>
-                    <Col xxl={8} md={12} s={24}>
+                    <Col xxl={8} md={8} s={24}>
                         <img src={Wheels3} alt="Example 3" className={'work-img'}/>
                     </Col>
                 </Row>
