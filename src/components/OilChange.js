@@ -16,8 +16,9 @@ class OilChange extends Component{
                    renderItem={item => {
                            if(item.id === this.props.selectedOil.id){
                                return(
-                                       <Card title={item.title} extra={item.price} style={{ width:'auto' }}>
+                                       <Card title={item.title} style={{ width:'auto' }}>
                                            <p>{item.description}</p>
+                                           <p>{item.price}</p>
                                        </Card>
                                )
                            }

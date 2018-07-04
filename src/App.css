@@ -177,8 +177,16 @@
         margin-top: 2%;
     }
 /*TIRE SERVICE*/
+    .service-title{
+        font-size: 2vw;
+    }
     .tire-service-price{
-        margin-top: 6%;
+        font-size: 1.5vw;
+        margin: 4%;
+        color: #F9A825;
+    }
+    .card-description{
+        font-size: 1.5vw;
     }
     .card-center {
         float: none; /* Added */
@@ -206,9 +214,7 @@
     }
 
 /*GENERAL*/
-    .card-description{
-        font-size: 16px;
-    }
+
 /*JUMBROTRON*/
     .jumbotron-title{
         font-size: 3.5vw;

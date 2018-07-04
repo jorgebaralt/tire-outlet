@@ -15,9 +15,9 @@ class CarServices extends Component{
         return this.props.tireServices.map((service) =>{
             return(
                 <Row key={service.id}>
-                        <Card style={{ width:'auto', margin:'0 auto 1%', maxWidth:900}} >
+                        <Card style={{ width:'auto', margin:'0 auto 1%', maxWidth:1200}} >
                             <Col xxl={12}>
-                                <h4>{service.title}</h4>
+                                <h4 className={'service-title'}>{service.title}</h4>
                                 <div className={'tire-service-price'}>{service.price}</div>
                             </Col>
                             <Col xxl={12}>
