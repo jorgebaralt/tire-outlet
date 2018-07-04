@@ -26,15 +26,15 @@ class Home extends Component{
         return services.map((service)=>{
             return(
                 <Link to={service.url} key={service.key}>
-                    <Col  className={'home-service'} xs={24} sm={12} md={8} lg={8} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
+                    <Col  className={'home-service'} xs={8} sm={8} md={8} lg={4} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
                         <Card
                             hoverable
-                            style={{ width: 200,minHeight:325}}
+                            style={{ width: 'auto',maxWidth:200,Height:'auto', minHeight:'20vw'}}
                             cover={<img src={service.image} alt={"Services.."}/>}
                         >
                             <Meta
-                                title={service.title}
-                                description={service.description}
+                                style={{fontSize:'2vw'}}
+                                description={service.title}
                             />
                         </Card>
                     </Col>
@@ -64,20 +64,19 @@ class Home extends Component{
     static renderInformationAndAddress(){
         return(
             <Row>
-                <Col xl={12} sm={24}>
-                    <Card title="Contact us" style={{ width: 'auto', height:451,fontSize:18}}>
+
+                    <Card title="Contact us" style={{ width: 'auto', height:'auto',fontSize:'1.5vw', margin:'2%'}}>
                         <p><strong>Phone number:</strong> 407-888-9918 </p>
                         <p><strong>Email:</strong> tireoutletfl@gmail.com</p>
 
                     </Card>
-                </Col>
 
-                <Col xl={12} sm={24}>
-                    <Card title="Direction" style={{width:'auto', height:'auto', fontSize:18}}>
+
+                    <Card title="Direction" style={{width:'auto', height:'auto', fontSize:'1.5vw', margin:'2%'}}>
                         <p><strong>Address:</strong> 5495 S Orange Blossom Trail, Orlando, FL 32839 </p>
                         <div id="map"> </div>
                     </Card>
-                </Col>
+
             </Row>
         )
     }

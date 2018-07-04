@@ -1,4 +1,18 @@
 @import "~antd/dist/antd.css";
+/*GENERAL*/
+    .page-title{
+        margin:2.5%;
+        font-size: 2.5vw;
+    }
+    .p-description{
+        font-size: 2vw;
+    }
+    .card-title{
+        font-size: 3vw;
+    }
+    .page-text{
+
+    }
 /*Navigation menu */
     .menu-link{
         color:black;
@@ -70,7 +84,7 @@
         height: 10%;
     }
     #header-title{
-        font-size: 16px;
+        font-size: 2vw;
         color: black;
         text-align: left;
     }
@@ -91,7 +105,7 @@
     }
     /*COLLAPSE BUTTON FOR SIDER*/
     .trigger{
-        font-size: 18px;
+        font-size: 2.5vw;
         line-height: 64px;
         padding: 0 24px;
         cursor: pointer;
@@ -103,9 +117,6 @@
 
 /*HOME*/
 
-    .page-title{
-        margin:2.5%;
-    }
     #logo_img{
         max-height: 80%;
         max-width: 80%;
@@ -138,10 +149,10 @@
     }
     .home-services{
         align-items: center;
+        margin-left: 2%;
     }
     .home-service{
-        margin-left: 4%;
-        margin-right: 4%;
+        margin: 4%;
     }
     #map{
         height: 300px;
@@ -175,7 +186,7 @@
     .snap-list{
         margin-top: 1%;
         color: #000;
-        font-size: 28px;
+        font-size: 1.6vw;
         text-align: left;
     }
     .snap-bold{

@@ -54,7 +54,7 @@ class App extends Component{
                       <Menu.Item key="Home">
                           <Link to="/" className={"menu-link"}>
                           <Icon type="home" />
-                          <span className="nav-text">
+                          <span className="nav-text menu-title">
                               Home
                           </span>
                           </Link>
@@ -62,33 +62,33 @@ class App extends Component{
 
                       <SubMenu
                           key="services"
-                          title={<span><Icon type="setting" /><span>Services</span></span>}
+                          title={<span><Icon type="setting" /><span  className={'menu-title'} >Services</span></span>}
                       >
                           <Menu.Item key="Oil Change">
                               <Link to="/services/oil-change" className={"menu-link"}>
                                   <Icon type="filter"/>
-                                  <span>Oil Change</span>
+                                  <span className={'menu-title'}>Oil Change</span>
                               </Link>
                           </Menu.Item>
 
                           <Menu.Item key="Tire Services">
                               <Link to="/services/tire-services" className={"menu-link"} >
                                   <Icon type="sync"/>
-                                  <span>Tire Services</span>
+                                  <span  className={'menu-title'}>Tire Services</span>
                               </Link>
                           </Menu.Item>
 
                           <Menu.Item key="Mechanic">
                               <Link to="/services/mechanic" className={"menu-link"} >
                                   <Icon type="tool"/>
-                                  <span>Mechanic</span>
+                                  <span  className={'menu-title'}>Mechanic</span>
                               </Link>
                           </Menu.Item>
 
                           <Menu.Item key="Lift Kits">
                               <Link to="/services/lift" className={"menu-link"} >
                                   <Icon type="car"/>
-                                  <span>Lifting Kit</span>
+                                  <span  className={'menu-title'}>Lifting Kit</span>
                               </Link>
                           </Menu.Item>
 
@@ -100,16 +100,14 @@ class App extends Component{
                   <div>
                       <Header style={headerStyle}>
                         <Row>
-                            <Col sm={3} xl={1}>
-                                <div>
+
                                     <Icon
                                         className="trigger"
                                         type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
                                         onClick={this.toggle}
                                     />
-                                </div>
-                            </Col>
-                            <Col sm={21} xl={23}> <span id={"header-title"}> {selectedService} </span></Col>
+
+                            <span id={"header-title"}> {selectedService} </span>
 
                         </Row>
                       </Header>
