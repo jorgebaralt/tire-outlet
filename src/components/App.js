@@ -9,6 +9,7 @@ import { Layout, Menu, Icon, BackTop ,Row, Col } from 'antd';
 import {Link, Route,Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {selectMenuOption} from "../actions";
+import {isMobile} from 'react-device-detect';
 
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -28,6 +29,11 @@ class App extends Component{
     render(){
         const {siderStyle,headerStyle,contentStyle,layoutStyle,footerStyle} = styles;
         const {selectedService} = this.props;
+
+        if(isMobile){
+            this.setState({collapse:true})
+        }
+
       return(
 
           <Layout>
