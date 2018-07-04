@@ -8,7 +8,10 @@
         font-size: 2vw;
     }
     .card-title{
-        font-size: 3vw;
+        font-size: 1.8vw;
+    }
+    .card-text{
+        font-size:1.05vw;
     }
     .page-text{
 
@@ -105,7 +108,7 @@
     }
     /*COLLAPSE BUTTON FOR SIDER*/
     .trigger{
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         line-height: 64px;
         padding: 0 24px;
         cursor: pointer;
@@ -186,7 +189,7 @@
     .snap-list{
         margin-top: 1%;
         color: #000;
-        font-size: 1.6vw;
+        font-size: 1.8vw;
         text-align: left;
     }
     .snap-bold{
@@ -206,4 +209,12 @@
     .card-description{
         font-size: 16px;
     }
+/*JUMBROTRON*/
+    .jumbotron-title{
+        font-size: 3.5vw;
 
+    }
+    .jumbotron-p{
+        font-size: 1vw;
+        color: #F9A825;
+    }

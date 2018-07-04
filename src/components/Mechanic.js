@@ -9,7 +9,7 @@ class Mechanic extends Component{
         return this.props.mechanicServices.map((service) => {
             return(
                 <Col xxl={6} lg={8} md={12} sm={24} >
-                    <div className="card" style={{width: 'auto', margin:5,minHeight:220,height:'auto'}}>
+                    <div className="card" style={{width: 'auto', margin:5,minHeight:'13vw',height:'auto'}}>
                         <div className="card-body">
                             <h5 className="card-title">{service.title}</h5>
                             <hr/>

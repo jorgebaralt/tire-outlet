@@ -4,8 +4,8 @@ const Jumbotron = ({title,description}) =>{
     return(
         <div className="jumbotron jumbotron-fluid">
             <div className="container">
-                <h1 className="display-4">{title}</h1>
-                <p className="lead"> {description} </p>
+                <h1 className="jumbotron-title">{title}</h1>
+                <p className="jumbotron-p"> {description} </p>
             </div>
         </div>
     )
