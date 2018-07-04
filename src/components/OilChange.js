@@ -9,16 +9,16 @@ class OilChange extends Component{
            return(
                <List
                    size="large"
-                   header={<h1>Choose Your Oil</h1>}
-                   style={{width:'80%'}}
+                   header={<h1 style={{fontSize:'4vw'}}>Choose Your Oil</h1>}
+                   style={{width:'80%',align:'center',float:'none',margin:'0 auto'}}
                    bordered
                    dataSource={this.props.oilOptions}
                    renderItem={item => {
                            if(item.id === this.props.selectedOil.id){
                                return(
-                                       <Card title={item.title} style={{ width:'auto' }}>
-                                           <p>{item.description}</p>
-                                           <p>{item.price}</p>
+                                       <Card title={item.title} style={{fontSize:'1vw'}}>
+                                           <p style={{fontSize:'1vw'}}>{item.description}</p>
+                                           <p style={{fontSize:'1vw'}}>{item.price}</p>
                                        </Card>
                                )
                            }
@@ -44,7 +44,7 @@ class OilChange extends Component{
                         {this.renderOilChangeOptions()}
                     </Col>
                     <Col xl={12} sm={24} id={'why-oil'} >
-                        <h1> Why Should I Change Car Oil? </h1>
+                        <h1 style={{fontSize:'3vw'}}> Why Should I Change Car Oil? </h1>
                         <ul className="list-group list-group-flush" >
                             <li className="list-group-item"> 1 - Maintains engine lubrication</li>
                             <li className="list-group-item"> 2 - Cools engine components</li>
