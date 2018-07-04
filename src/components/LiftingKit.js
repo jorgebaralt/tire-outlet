@@ -23,7 +23,7 @@ class LiftingKit extends Component{
 
                     <Card style={{ margin:'0 auto 1%', maxWidth:900} }>
                         <Col xxl={14}><h2>{reason.title}</h2></Col>
-                        <Col xxl={10}><p className={'card-description'}>{reason.description}</p></Col>
+                        <Col xxl={10}><p className={'reasons-p'}>{reason.description}</p></Col>
                     </Card>
 
                 </Row>

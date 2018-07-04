@@ -178,15 +178,18 @@
     }
 /*TIRE SERVICE*/
     .service-title{
-        font-size: 2vw;
+        font-size: 25px;
     }
     .tire-service-price{
-        font-size: 1.5vw;
+        font-size: 13px;
         margin: 4%;
         color: #F9A825;
     }
     .card-description{
-        font-size: 1.5vw;
+        font-size: 15px;
+    }
+    .reasons-p{
+        font-size: 15px;
     }
     .card-center {
         float: none; /* Added */
