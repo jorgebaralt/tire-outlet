@@ -22,17 +22,21 @@ class App extends Component{
     };
     toggle = () => {
         this.setState({
-            collapsed: !this.state.collapsed,
+            collapsed: !this.state.collapsed
         });
     };
+
+    componentWillMount(){
+        if(isMobile){
+            this.setState({collapse:true})
+        }
+    }
 
     render(){
         const {siderStyle,headerStyle,contentStyle,layoutStyle,footerStyle} = styles;
         const {selectedService} = this.props;
 
-        if(isMobile){
-            this.setState({collapse:true})
-        }
+
 
       return(
 
