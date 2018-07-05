@@ -18,17 +18,17 @@ const {SubMenu} = Menu;
 class App extends Component{
     // react state to handle the sider collapse
     state={
-        collapse:false
-    };
+        collapsed:false};
+
     toggle = () => {
         this.setState({
-            collapsed: !this.state.collapsed
+            collapsed: !this.state.collapsed,
         });
     };
 
     componentWillMount(){
         if(isMobile){
-            this.setState({collapse:true})
+            this.setState({collapsed:true})
         }
     }
 
