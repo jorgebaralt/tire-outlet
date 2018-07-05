@@ -20,11 +20,6 @@ class App extends Component{
     state={
         collapsed:false};
 
-    toggle = () => {
-        this.setState({
-            collapsed: !this.state.collapsed,
-        });
-    };
 
     componentWillMount(){
         if(isMobile){
@@ -110,15 +105,7 @@ class App extends Component{
                   <div>
                       <Header style={headerStyle}>
                         <Row>
-
-                                    <Icon
-                                        className="trigger"
-                                        type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-                                        onClick={this.toggle}
-                                    />
-
                             <span id={"header-title"}> {selectedService} </span>
-
                         </Row>
                       </Header>
                   </div>
