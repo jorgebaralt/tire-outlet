@@ -30,7 +30,7 @@ class Home extends Component{
                         <Card
                             hoverable
                             style={{ minWidth: 'auto',maxWidth:220,Height:'auto', minHeight:'15vw'}}
-                            cover={<img src={service.image} alt={"Services.."}/>}
+                            cover={<img src={service.image} alt={"Services.."}/>}g
                         >
                             <Meta
                                 style={{fontSize:'2vw'}}

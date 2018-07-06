@@ -55,7 +55,7 @@ class App extends Component{
                   {/*TODO : maybe logo here*/}
                   <div id="logo">Tire Outlet </div>
 
-                  <Menu className="menu" mode="inline" selectedKeys={selectedService} defaultOpenKeys={['services']} onClick={({key})=>this.props.selectMenuOption(key)}>
+                  <Menu className="menu" mode="inline" selectedKeys={selectedService} defaultOpenKeys={[]} onClick={({key})=>this.props.selectMenuOption(key)}>
                       <Menu.Item key="Home">
                           <Link to="/" className={"menu-link"}>
                           <Icon type="home" />
@@ -102,13 +102,6 @@ class App extends Component{
                   </Menu>
               </Sider>
               <Layout style={layoutStyle}>
-                  <div>
-                      <Header style={headerStyle}>
-                        <Row>
-                            <span id={"header-title"}> {selectedService} </span>
-                        </Row>
-                      </Header>
-                  </div>
 
                   <Content style={contentStyle}>
                       <div>
