@@ -29,7 +29,7 @@ class Home extends Component{
                     <Col  className={'home-service'} xs={8} sm={8} md={8} lg={4} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
                         <Card
                             hoverable
-                            style={{ minWidth: 'auto',maxWidth:'auto',Height:'auto', minHeight:'20vw'}}
+                            style={{ minWidth: 'auto',maxWidth:220,Height:'auto', minHeight:'15vw'}}
                             cover={<img src={service.image} alt={"Services.."}/>}
                         >
                             <Meta
