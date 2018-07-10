@@ -5,21 +5,11 @@ import {Link} from 'react-router-dom'
 import {selectMenuOption} from "../actions";
 import SnapBanner from './SnapBanner'
 import TireOutletLogo from '../images/TireOutletLogo.jpeg';
-/*global google*/
+import TireOutletMap from './TireOutletMap';
+
 const {Meta} = Card;
 
 class Home extends Component{
-    componentDidMount(){
-        const location = {lat:28.480774,lng:-81.396365};
-        let map = new google.maps.Map(document.getElementById('map'),{
-            zoom:15,
-            center:location
-        });
-        new google.maps.Marker({
-            position: location,
-            map: map
-        })
-    }
 
     renderServices(){
         const {services} = this.props;
@@ -74,7 +64,15 @@ class Home extends Component{
 
                     <Card title="Direction" style={{width:'auto', height:'auto', fontSize:'1.5vw', margin:'2%'}}>
                         <p><strong>Address:</strong> 5495 S Orange Blossom Trail, Orlando, FL 32839 </p>
-                        <div id="map"> </div>
+
+                        <TireOutletMap
+                            googleMapURL="maps.googleapis.com/maps/api/js?key=AIzaSyBieffVTLc-p8XOjrrtNBb-JJhjwSp_2fQ"
+                            loadingElement={<div style={{ height: `100%` }} />}
+                            containerElement={<div style={{ height: `400px` }} />}
+                            mapElement={<div style={{ height: `100%` }} />}
+                        />
+
+
                     </Card>
 
             </Row>
