@@ -4,11 +4,20 @@
     <list default="true" id="43eb61b6-58b7-4509-a498-02776e7169e0" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/components/TireOutletMap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/components/Jumbotron.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jumbotron.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OilChange.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OilChange.js" afterDir="false" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,15 +46,36 @@
       <file leaf-file-name="TireOutletMap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/TireOutletMap.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret column="26" selection-start-column="26" selection-end-column="26" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="230">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+=======
+            <state relative-caret-position="342">
+              <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+=======
       <file leaf-file-name="Jumbotron.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Jumbotron.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="46">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
@@ -57,6 +87,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
               <caret line="23" column="33" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="33" />
+=======
+            <state relative-caret-position="161">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
             </state>
           </provider>
         </entry>
@@ -64,8 +99,18 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-2167">
               <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="2208">
+              <caret line="107" column="51" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="51" />
+=======
+            <state relative-caret-position="1254">
+              <caret line="111" column="84" lean-forward="true" selection-start-line="111" selection-start-column="84" selection-end-line="111" selection-end-column="84" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -73,6 +118,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,6 +133,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
               <caret line="10" selection-start-line="10" selection-end-line="11" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+=======
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3841">
+              <caret line="167" column="27" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="27" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
             </state>
           </provider>
         </entry>
@@ -200,16 +261,34 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/manifest.json" />
         <option value="$PROJECT_DIR$/src/reducers/reducer_mechanic_services.js" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/components/Jumbotron.js" />
+=======
+        <option value="$PROJECT_DIR$/src/components/Home.js" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
         <option value="$PROJECT_DIR$/src/components/TireServices.js" />
         <option value="$PROJECT_DIR$/src/components/LiftingKit.js" />
         <option value="$PROJECT_DIR$/src/components/Mechanic.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/components/Jumbotron.js" />
         <option value="$PROJECT_DIR$/src/components/OilChange.js" />
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/TireOutletMap.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Home.js" />
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/components/Home.js" />
+=======
+        <option value="$PROJECT_DIR$/src/components/App.js" />
+        <option value="$PROJECT_DIR$/src/components/Jumbotron.js" />
+        <option value="$PROJECT_DIR$/src/components/OilChange.js" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
       </list>
     </option>
   </component>
@@ -245,7 +324,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,6 +357,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,13 +428,26 @@
       <workItem from="1530200285655" duration="1484000" />
       <workItem from="1530498793430" duration="6720000" />
       <workItem from="1530748125302" duration="63000" />
+<<<<<<< HEAD
+      <workItem from="1530748201527" duration="3236000" />
+      <workItem from="1530918014743" duration="514000" />
+=======
       <workItem from="1530748201527" duration="2584000" />
       <workItem from="1530758033662" duration="605000" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="153684000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="150280000" />
+=======
+    <option name="totallyTimeSpent" value="150373000" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,8 +470,16 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4996986" visible="true" weight="0.26956522" />
+=======
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4996986" visible="true" weight="0.27030033" />
+=======
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4996986" visible="true" weight="0.27080745" />
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
       <window_info anchor="bottom" id="RNConsole" order="8" weight="0.3292683" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
@@ -391,11 +491,18 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="RNConsole" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+=======
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="RNConsole" order="8" weight="0.3292683" />
+=======
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50030136" side_tool="true" weight="0.25216317" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -662,6 +769,26 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/components/OilChange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="29" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+        </state>
+      </provider>
+    </entry>
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
     <entry file="file://$PROJECT_DIR$/src/components/LiftingKit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -681,8 +808,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-2167">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="2208">
+          <caret line="107" column="51" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="51" />
+=======
+        <state relative-caret-position="1254">
+          <caret line="111" column="84" lean-forward="true" selection-start-line="111" selection-start-column="84" selection-end-line="111" selection-end-column="84" />
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -701,8 +838,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Jumbotron.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="46">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="435">
+          <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+=======
+        <state relative-caret-position="161">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+>>>>>>> b2a664a56bc27f64ae899595d9de8819e9631a93
         </state>
       </provider>
     </entry>
@@ -734,6 +887,7 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+>>>>>>> 39ebcb6ef053f4ba7b7a6215947d68cbec06e20f
         </state>
       </provider>
     </entry>
