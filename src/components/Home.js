@@ -15,12 +15,12 @@ class Home extends Component{
         const {services} = this.props;
         return services.map((service)=>{
             return(
-                <Link to={service.url} key={service.key}>
+                <Link to={service.url} key={service.key}>a
                     <Col  className={'home-service'} xs={8} sm={8} md={8} lg={4} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
                         <Card
                             hoverable
                             style={{ minWidth: 'auto',maxWidth:220,Height:'auto', minHeight:'15vw'}}
-                            cover={<img src={service.image} alt={"Services.."}/>}g
+                            cover={<img src={service.image} alt={"Services.."}/>}
                         >
                             <Meta
                                 style={{fontSize:'2vw'}}
@@ -71,8 +71,6 @@ class Home extends Component{
                             containerElement={<div style={{ height: `400px` }} />}
                             mapElement={<div style={{ height: `100%` }} />}
                         />
-
-
                     </Card>
 
             </Row>
