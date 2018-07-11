@@ -15,7 +15,7 @@ class Home extends Component{
         const {services} = this.props;
         return services.map((service)=>{
             return(
-                <Link to={service.url} key={service.key}>a
+                <Link to={service.url} key={service.key}>
                     <Col  className={'home-service'} xs={8} sm={8} md={8} lg={4} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
                         <Card
                             hoverable
