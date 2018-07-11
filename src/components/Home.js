@@ -62,7 +62,7 @@ class Home extends Component{
                     </Card>
 
 
-                    <Card title="Direction" style={{width:'auto', height:'auto', fontSize:'1.5vw', margin:'2%'}}>
+                    <Card title="Direction" style={{width:'auto', height:'auto', fontSize:'1.5vw', margin:'2%'}} onClick={ () => {window.open('https://www.google.com/maps/search/?api=1&query=tire+outlet+truck+bus+and+car+orlando')}}>
                         <p><strong>Address:</strong> 5495 S Orange Blossom Trail, Orlando, FL 32839 </p>
 
                         <TireOutletMap
