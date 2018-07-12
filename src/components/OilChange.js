@@ -18,14 +18,14 @@ class OilChange extends Component{
                                return(
                                        <Card title={item.title}>
                                            <p style={{fontSize:15}}>{item.description}</p>
-                                           <p style={{fontSize:14,color:'green'}}>{item.price}</p>
+                                           <p style={{fontSize:14,color:'#F9A825'}}>{item.price}</p>
                                        </Card>
                                )
                            }
                            else{
                            return(
                                (
-                                   <List.Item key={item.id} style={{margin:5}} onClick={()=>{this.props.selectOilOption(item.id)}} className={'oil-list'} >
+                                   <List.Item key={item.id} style={{margin:5, fontSize:15}} onClick={()=>{this.props.selectOilOption(item.id)}} className={'oil-list'} >
                                        {item.title}
                                    </List.Item>
                                )
