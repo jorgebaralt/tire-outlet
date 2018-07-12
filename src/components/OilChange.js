@@ -40,7 +40,7 @@ class OilChange extends Component{
             <div>
                 <Jumbotron title={"Oil Service"} description={"The blood of your vehicle"}/>
                 <Row>
-                    <Col xl={12} sm={24} style={{marginBottom:'5%git'}}>
+                    <Col xl={12} sm={24} style={{marginBottom:'5%'}}>
                         {this.renderOilChangeOptions()}
                     </Col>
                     <Col xl={12} sm={24} id={'why-oil'} >

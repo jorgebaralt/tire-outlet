@@ -6,29 +6,30 @@ import {selectMenuOption} from "../actions";
 import SnapBanner from './SnapBanner'
 import TireOutletLogo from '../images/TireOutletLogo.jpeg';
 import TireOutletMap from './TireOutletMap';
+import {isMobile} from 'react-device-detect';
 
 const {Meta} = Card;
-
 class Home extends Component{
 
     renderServices(){
         const {services} = this.props;
+
         return services.map((service)=>{
             return(
-                <Link to={service.url} key={service.key}>
-                    <Col  className={'home-service'} xs={8} sm={8} md={8} lg={4} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
-                        <Card
-                            hoverable
-                            style={{ minWidth: 'auto',maxWidth:220,Height:'auto', minHeight:'15vw'}}
-                            cover={<img src={service.image} alt={"Services.."}/>}
-                        >
-                            <Meta
-                                style={{fontSize:'2vw'}}
-                                description={service.title}
-                            />
-                        </Card>
-                    </Col>
-                </Link>
+                    <Link to={service.url} key={service.key}>
+                        <Col style={{margin: isMobile? '8.2%' : '4%'}} xs={8}  md={8} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
+                            <Card
+                                hoverable
+                                style={{ minWidth: 'auto',maxWidth:220,Height:'auto', minHeight: '15vw'}}
+                                cover={<img src={service.image} alt={"Services.."}/>}
+                            >
+                                <Meta
+                                    style={{fontSize:'1.5vw'}}
+                                    description={service.title}
+                                />
+                            </Card>
+                        </Col>
+                    </Link>
             )
         });
     }
