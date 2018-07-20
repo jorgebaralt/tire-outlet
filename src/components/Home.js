@@ -5,40 +5,31 @@ import {Link} from 'react-router-dom'
 import {selectMenuOption} from "../actions";
 import SnapBanner from './SnapBanner'
 import TireOutletLogo from '../images/TireOutletLogo.jpeg';
-/*global google*/
-const {Meta} = Card;
+import TireOutletMap from './TireOutletMap';
+import {isMobile} from 'react-device-detect';
 
+const {Meta} = Card;
 class Home extends Component{
-    componentDidMount(){
-        const location = {lat:28.480774,lng:-81.396365};
-        let map = new google.maps.Map(document.getElementById('map'),{
-            zoom:15,
-            center:location
-        });
-        new google.maps.Marker({
-            position: location,
-            map: map
-        })
-    }
 
     renderServices(){
         const {services} = this.props;
+
         return services.map((service)=>{
             return(
-                <Link to={service.url} key={service.key}>
-                    <Col  className={'home-service'} xs={8} sm={8} md={8} lg={4} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
-                        <Card
-                            hoverable
-                            style={{ minWidth: 'auto',maxWidth:220,Height:'auto', minHeight:'15vw'}}
-                            cover={<img src={service.image} alt={"Services.."}/>}g
-                        >
-                            <Meta
-                                style={{fontSize:'2vw'}}
-                                description={service.title}
-                            />
-                        </Card>
-                    </Col>
-                </Link>
+                    <Link to={service.url} key={service.key}>
+                        <Col style={{margin: isMobile? '8.2%' : '4%'}} xs={8}  md={8} xl={4} onClick={() =>{this.props.selectMenuOption(service.key)}}>
+                            <Card
+                                hoverable
+                                style={{ minWidth: 'auto',maxWidth:220,Height:'auto', minHeight: '15vw'}}
+                                cover={<img src={service.image} alt={"Services.."}/>}
+                            >
+                                <Meta
+                                    style={{fontSize:'1.5vw'}}
+                                    description={service.title}
+                                />
+                            </Card>
+                        </Col>
+                    </Link>
             )
         });
     }
@@ -72,9 +63,15 @@ class Home extends Component{
                     </Card>
 
 
-                    <Card title="Direction" style={{width:'auto', height:'auto', fontSize:'1.5vw', margin:'2%'}}>
+                    <Card title="Direction" style={{width:'auto', height:'auto', fontSize:'1.5vw', margin:'2%'}} onClick={ () => {window.open('https://www.google.com/maps/search/?api=1&query=tire+outlet+truck+bus+and+car+orlando')}}>
                         <p><strong>Address:</strong> 5495 S Orange Blossom Trail, Orlando, FL 32839 </p>
-                        <div id="map"> </div>
+
+                        <TireOutletMap
+                            googleMapURL="maps.googleapis.com/maps/api/js?key=AIzaSyBieffVTLc-p8XOjrrtNBb-JJhjwSp_2fQ"
+                            loadingElement={<div style={{ height: `100%` }} />}
+                            containerElement={<div style={{ height: `400px` }} />}
+                            mapElement={<div style={{ height: `100%` }} />}
+                        />
                     </Card>
 
             </Row>

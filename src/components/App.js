@@ -5,14 +5,14 @@ import Mechanic from './Mechanic'
 import LiftingKit from './LiftingKit';
 import Home from './Home';
 import OilChange from './OilChange';
-import { Layout, Menu, Icon, BackTop ,Row, Col } from 'antd';
+import { Layout, Menu, Icon, BackTop  } from 'antd';
 import {Link, Route,Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {selectMenuOption} from "../actions";
 import {isMobile} from 'react-device-detect';
 
 
-const { Header, Content, Footer, Sider } = Layout;
+const {  Content, Footer, Sider } = Layout;
 const {SubMenu} = Menu;
 
 class App extends Component{
@@ -28,7 +28,7 @@ class App extends Component{
     }
 
     render(){
-        const {siderStyle,headerStyle,contentStyle,layoutStyle,footerStyle} = styles;
+        const {siderStyle,contentStyle,layoutStyle,footerStyle} = styles;
         const {selectedService} = this.props;
 
 

@@ -1,7 +1,7 @@
 @import "~antd/dist/antd.css";
 /*GENERAL*/
     .page-title{
-        margin:2.5%;
+        margin-bottom:2%;
         font-size: 2.5vw;
     }
     .p-description{
@@ -13,9 +13,7 @@
     .card-text{
         font-size:14px;
     }
-    .page-text{
 
-    }
 /*Navigation menu */
     .menu-link{
         color:black;
@@ -152,12 +150,10 @@
         padding-bottom: 2.5%;
     }
     .home-services{
-        align-items: center;
-        margin-left: 2%;
+        align-content: center;
+        margin: 0 auto
     }
-    .home-service{
-        margin: 4%;
-    }
+
     #map{
         height: 300px;
         width: auto;

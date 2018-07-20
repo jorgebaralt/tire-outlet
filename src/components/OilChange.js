@@ -18,14 +18,14 @@ class OilChange extends Component{
                                return(
                                        <Card title={item.title}>
                                            <p style={{fontSize:15}}>{item.description}</p>
-                                           <p style={{fontSize:14,color:'green'}}>{item.price}</p>
+                                           <p style={{fontSize:14,color:'#F9A825'}}>{item.price}</p>
                                        </Card>
                                )
                            }
                            else{
                            return(
                                (
-                                   <List.Item key={item.id} style={{margin:5}} onClick={()=>{this.props.selectOilOption(item.id)}} className={'oil-list'} >
+                                   <List.Item key={item.id} style={{margin:5, fontSize:15}} onClick={()=>{this.props.selectOilOption(item.id)}} className={'oil-list'} >
                                        {item.title}
                                    </List.Item>
                                )
@@ -40,7 +40,7 @@ class OilChange extends Component{
             <div>
                 <Jumbotron title={"Oil Service"} description={"The blood of your vehicle"}/>
                 <Row>
-                    <Col xl={12} sm={24} style={{marginBottom:'5%git'}}>
+                    <Col xl={12} sm={24} style={{marginBottom:'5%'}}>
                         {this.renderOilChangeOptions()}
                     </Col>
                     <Col xl={12} sm={24} id={'why-oil'} >
