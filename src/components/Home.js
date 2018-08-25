@@ -37,11 +37,13 @@ class Home extends Component{
     static renderSnap(){
         return(
             <Row style={{marginBottom:'5%',marginLeft:'2%',marginRight:'2%'}}>
-                <Col xl={12} m={24}>
-                    <SnapBanner/>
+                <Col xl={12} m={24} style={{marginTop: '2.5%'}}>
+                <a href="https://app.snapfinance.com/customer/application/?mid=467847527" target="_blank" >
+                    <img src="https://app.snapfinance.com/images/apply_image_13.jpeg" alt="Snap Finance - Apply Here"  height="200" width="100%" />
+                </a>
                 </Col>
                 <Col xl={12} m={24}>
-                    <div style={{marginLeft:'5%',marginTop:'3%'}}>
+                    <div style={{marginLeft:'5%'}}>
                         <h4 className={'snap-list'}><span className={'snap-bold'}>Financing with Snap!</span> Up to 80% Approval Rate</h4>
                         <h4 className={'snap-list'}><span className={'snap-bold'}>Apply Today</span> Bad Credit or No Credit? is OK!</h4>
                         <h4 className={'snap-list'}><span className={'snap-bold'}>You can Finance up to $3000 Today</span>, And Shop Right Away</h4>

@@ -1,16 +1,19 @@
 import React , {Component}from 'react';
 import { Card, Row, Col} from 'antd';
-import {connect} from 'react-redux'
-import Jumbotron from './Jumbotron'
-import Lift1 from '../images/Lift1.jpeg'
-import Lift2 from '../images/Lift2.jpeg'
-import Lift3 from '../images/Lift3.jpeg'
-import Lift4 from '../images/Lift4.jpeg'
-import Lift5 from '../images/Lift5.jpeg'
-import Lift6 from '../images/Lift6.jpeg'
-import Wheels1 from '../images/Wheels1.jpeg'
-import Wheels2 from '../images/Wheels2.jpeg'
-import Wheels3 from '../images/Wheels3.jpeg'
+import {connect} from 'react-redux';
+import Jumbotron from './Jumbotron';
+import Lift1 from '../images/Lift1.jpeg';
+import Lift2 from '../images/Lift2.jpeg';
+import Lift3 from '../images/Lift3.jpeg';
+import Lift4 from '../images/Lift4.jpeg';
+import Lift5 from '../images/Lift5.jpeg';
+import Lift6 from '../images/Lift6.jpeg';
+import Lift7 from '../images/Lift7.jpeg';
+import Lift8 from '../images/Lift8.jpeg';
+import Lift9 from '../images/Lift9.jpeg';
+import Wheels1 from '../images/Wheels1.jpeg';
+import Wheels2 from '../images/Wheels2.jpeg';
+import Wheels3 from '../images/Wheels3.jpeg';
 
 class LiftingKit extends Component{
 
@@ -38,11 +41,11 @@ class LiftingKit extends Component{
                     <Col xxl={8} md={12} s={24}>
                         <img src={Lift1} alt="Example 1" className={'work-img'}/>
                     </Col>
-                    <Col xxl={8} md={12} s={24}>
-                        <img src={Lift2} alt="Example 2" className={'work-img'}/>
+                    <Col xxl={8} md={8} s={24}>
+                        <img src={Lift8} alt="Example 2" className={'work-img'}/>
                     </Col>
                     <Col xxl={8} md={12} s={24}>
-                        <img src={Lift3} alt="Example 3" className={'work-img'}/>
+                        <img src={Lift2} alt="Example 2" className={'work-img'}/>
                     </Col>
                 </Row>
                 <Row>
@@ -67,6 +70,17 @@ class LiftingKit extends Component{
                         <img src={Wheels3} alt="Example 3" className={'work-img'}/>
                     </Col>
                 </Row>
+                <Row>
+                    <Col xxl={8} md={8} s={24}>
+                        <img src={Lift7} alt="Example 1" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={12} s={24}>
+                        <img src={Lift3} alt="Example 3" className={'work-img'}/>
+                    </Col>
+                    <Col xxl={8} md={8} s={24}>
+                        <img src={Lift9} alt="Example 3" className={'work-img'}/>
+                    </Col>
+                </Row>
             </Row>
 
 
@@ -82,7 +96,7 @@ class LiftingKit extends Component{
                 <h1>Why Should I Lift My Truck?</h1>
                 <hr/>
                 {this.renderWhyLift()}
-                <h1> Some of Our Work </h1>
+                <h1> GALLERY </h1>
                 <hr/>
                     {this.renderImages()}
             </div>
