@@ -11,7 +11,6 @@ import {connect} from 'react-redux';
 import {selectMenuOption} from "../actions";
 import {isMobile} from 'react-device-detect';
 
-
 const {  Content, Footer, Sider } = Layout;
 const {SubMenu} = Menu;
 

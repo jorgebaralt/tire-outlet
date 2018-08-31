@@ -224,3 +224,10 @@
     .jumbotron-p{
         font-size: 2vw;
     }
+
+/* SNAPBANNER */
+
+    #snap-banner{
+        width: 100%;
+        height: auto;
+    }
