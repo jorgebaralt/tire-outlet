@@ -34,7 +34,7 @@ class App extends Component {
         const { selectedService } = this.props;
 
         return (
-            <HttpsRedirect>
+            // <HttpsRedirect>
                 <Layout>
                 {/* Navigate up button */}
                     <div>
@@ -120,7 +120,7 @@ class App extends Component {
                         </Footer>
                     </Layout>
                 </Layout>
-            </HttpsRedirect>
+            // </HttpsRedirect>
         );
     }
 }
