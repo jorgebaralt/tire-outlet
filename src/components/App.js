@@ -121,7 +121,6 @@ class App extends Component {
                     </Layout>
                 </Layout>
             </HttpsRedirect>
-            
         );
     }
 }
