@@ -47,15 +47,15 @@ class App extends Component {
                         trigger={null}
                         collapsible
                         collapsed={this.state.collapsed}
-                        className="sider"
+                        className="sider animated bounceInLeft"
                         style={siderStyle}
-                        breakpoin={{ xs: '600' }}
+                        breakpoint={{ xs: '600' }}
 
                     >
                         {/* TODO : maybe logo here */}
                         <div id="logo">Tire Outlet </div>
 
-                        <Menu className="menu" mode="inline" selectedKeys={selectedService} defaultOpenKeys={[]} onClick={({ key }) => this.props.selectMenuOption(key)}>
+                        <Menu className="menu" mode="inline" selectedKeys={selectedService} defaultOpenKeys={[]} onClick={({ key }) => this.props.selectMenuOption(key)} >
                             <Menu.Item key="Home">
                                 <Link to="/" className={"menu-link"}>
                                     <Icon type="home" />

@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import { Card, Row, Col } from 'antd';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { isMobile } from 'react-device-detect';
 import { selectMenuOption } from '../actions';
 import TireOutletLogo from '../images/TireOutletLogo.jpeg';
 import TireOutletMap from './TireOutletMap';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const { Meta } = Card;
 class Home extends Component {
@@ -17,19 +16,21 @@ class Home extends Component {
         return services.map((service) => {
             return (
                 <Link to={service.url} key={service.key}>
-                    <Col xs={24} sm={24} md={12} xl={6} onClick={() => { this.props.selectMenuOption(service.key); }}>
-                        <Card
-                            hoverable
-                            style={{ boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)', width: 'auto', margin: '10%'}}
-                            className={'grow'}
-                            cover={<img src={service.image} alt={"Services.."} />}
-                        >
-                            <Meta
-                                style={{ fontSize: '20px', height: 50 }}
-                                title={service.title}
-                            />
-                        </Card>
-                    </Col>
+                    <ScrollAnimation animateIn='bounceInUp' delay={500} animateOnce={true}>
+                        <Col xs={24} sm={24} md={12} xl={6} onClick={() => { this.props.selectMenuOption(service.key); }}>
+                            <Card
+                                hoverable
+                                style={{ boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)', width: 'auto', margin: '10%'}}
+                                className={'grow'}
+                                cover={<img src={service.image} alt={"Services.."} />}
+                            >
+                                <Meta
+                                    style={{ fontSize: '25px', height: 50 }}
+                                    title={service.title}
+                                />
+                            </Card>
+                        </Col>
+                    </ScrollAnimation>
                 </Link>
             );
         });
@@ -63,29 +64,30 @@ class Home extends Component {
     static renderInformationAndAddress() {
         return (
             <Row>
-                <Card title="Contact us" style={{ width: 'auto', height: 'auto', fontSize: '20px', margin: '2%', boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)' }}>
-                    <p><strong>Phone number:</strong> 407-888-9918 </p>
-                    <p><strong>Email:</strong> tireoutletfl@gmail.com</p>
-                </Card>
+                <ScrollAnimation animateIn='pulse' duration={2} animateOnce={true}>
+                    <Card title="Contact us" style={{ width: 'auto', height: 'auto', fontSize: '20px', margin: '2%', boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)' }}>
+                        <p><strong>Phone number:</strong> 407-888-9918 </p>
+                        <p><strong>Email:</strong> tireoutletfl@gmail.com</p>
+                    </Card>
 
-                <Card title="Direction" style={{ width: 'auto', height: 'auto', fontSize: '20px', margin: '2%', boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)' }} >
-                    <p><strong>Address:</strong> 5495 S Orange Blossom Trail, Orlando, FL 32839 </p>
+                    <Card title="Direction" style={{ width: 'auto', height: 'auto', fontSize: '20px', margin: '2%', boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)' }} >
+                        <p><strong>Address:</strong> 5495 S Orange Blossom Trail, Orlando, FL 32839 </p>
 
-                    <TireOutletMap
-                        googleMapURL="maps.googleapis.com/maps/api/js?key=AIzaSyBieffVTLc-p8XOjrrtNBb-JJhjwSp_2fQ"
-                        loadingElement={<div style={{ height: `100%` }} />}
-                        containerElement={<div style={{ height: `400px` }} />}
-                        mapElement={<div style={{ height: `100%` }} />}
-                    />
-                    <div style={{ marginTop: 30}}>
-                        <a href='https://www.google.com/maps/search/?api=1&query=tire+outlet+truck+bus+and+car+orlando'>
-                            <strong>
-                                Take Me There
-                            </strong>
-                        </a>
-                    </div>
-
-                </Card>
+                        <TireOutletMap
+                            googleMapURL="maps.googleapis.com/maps/api/js?key=AIzaSyBieffVTLc-p8XOjrrtNBb-JJhjwSp_2fQ"
+                            loadingElement={<div style={{ height: `100%` }} />}
+                            containerElement={<div style={{ height: `400px` }} />}
+                            mapElement={<div style={{ height: `100%` }} />}
+                        />
+                        <div style={{ marginTop: 30}}>
+                            <a href='https://www.google.com/maps/search/?api=1&query=tire+outlet+truck+bus+and+car+orlando'>
+                                <strong>
+                                    Take Me There
+                                </strong>
+                            </a>
+                        </div>
+                    </Card>
+                </ScrollAnimation>
             </Row>
         );
     }
@@ -93,17 +95,24 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div><img src={TireOutletLogo} alt="Logo" id={'logo_img'} /></div>
+                <ScrollAnimation animateIn='fadeIn' duration={3} animateOnce={true}>
+                    <div><img src={TireOutletLogo} alt="Logo" id={'logo_img'}/></div>
+                    <h1 style={{fontSize: 40}}> <span className={'snap-bold'}>Welcome to Tire Outlet</span> We offer the following Services</h1>
+                </ScrollAnimation>
 
-                <h1 style={{fontSize: 40}}> <span className={'snap-bold'}>Welcome to Tire Outlet</span> We offer the following Services</h1>
 
                 <Row className={"home-services"}>
                     {this.renderServices()}
                 </Row>
+
                 <h1 className={"page-title"}> We also Offer Financing: </h1>
-                {Home.renderSnap()}
+
+                <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
+                    {Home.renderSnap()}
+                </ScrollAnimation>
 
                 <h1 className={"page-title"}> Information and Address </h1>
+
                 {Home.renderInformationAndAddress()}
 
             </div>
