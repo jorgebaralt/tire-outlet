@@ -2,7 +2,8 @@
 /*GENERAL*/
     .page-title{
         margin-bottom:2%;
-        font-size: 2.5vw;
+        font-size: 36px;
+        font-weight: bold;
     }
     .p-description{
         font-size: 2vw;
@@ -12,6 +13,9 @@
     }
     .card-text{
         font-size:14px;
+    }
+    .text-right{
+        text-align: right;
     }
 
 /*Navigation menu */
@@ -120,9 +124,9 @@
 /*HOME*/
 
     #logo_img{
-        max-height: 65%;
-        max-width: 65%;
-        padding-bottom: 5%;
+        max-height: 80%;
+        max-width: 100%;
+        margin-bottom: 5%;
     }
     .carousel_img{
         max-height: 100%;
@@ -150,8 +154,8 @@
         padding-bottom: 2.5%;
     }
     .home-services{
-        align-content: center;
-        margin: 0 auto
+        margin: 3% auto;
+        width: 80%;
     }
 
     #map{
@@ -195,14 +199,18 @@
 
 /*SNAP*/
     .snap-list{
-        margin-top: 1%;
         color: #000;
-        font-size: 1.8vw;
+        font-size: 26px;
         text-align: left;
+        margin: 10px;
     }
     .snap-bold{
         font-weight: bold;
         color: #F9A825;
+    }
+    #snap-test{
+        margin: 3% auto;
+        width: 100%;
     }
 /*WHY LIFT*/
     .work-img{

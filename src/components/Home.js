@@ -13,19 +13,19 @@ class Home extends Component {
 
     renderServices() {
         const { services } = this.props;
-
+        console.log(window.innerWidth);
         return services.map((service) => {
             return (
                 <Link to={service.url} key={service.key}>
-                    <Col style={{ margin: isMobile ? '8.2%' : '4%' }} xs={8} md={8} xl={4} onClick={() => { this.props.selectMenuOption(service.key); }}>
+                    <Col xs={24} sm={24} md={12} xl={6} onClick={() => { this.props.selectMenuOption(service.key); }}>
                         <Card
                             hoverable
-                            style={{ minWidth: 'auto', maxWidth: 220, Height: 'auto', minHeight: '15vw' }}
+                            style={{ boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)', width: 'auto', margin: '10%'}}
                             cover={<img src={service.image} alt={"Services.."} />}
                         >
                             <Meta
-                                style={{ fontSize: '1.5vw' }}
-                                description={service.title}
+                                style={{ fontSize: '20px', height: 50 }}
+                                title={service.title}
                             />
                         </Card>
                     </Col>
@@ -36,20 +36,25 @@ class Home extends Component {
 
     static renderSnap() {
         return (
-            <Row style={{ marginBottom: '5%', marginLeft: '2%', marginRight: '2%' }}>
-                <Col xl={12} m={24} style={{ marginTop: '2.5%', width: '100%', height: 'auto' }}>
+            <Row style={{ marginLeft: '2%', marginRight: '2%' }}>
+                <Col m={24} style={{ marginTop: '2.5%', width: '100%', height: 'auto' }}>
                     <a href="https://app.snapfinance.com/customer/application/?mid=467847527">
                         <img src="https://app.snapfinance.com/images/apply_image_13.jpeg" alt="Snap Finance - Apply Here" height="200" width="100%" />
                     </a>
                 </Col>
-                <Col xl={12} m={24}>
-                    <div style={{ marginLeft: '5%' }}>
-                        <h4 className={'snap-list'}><span className={'snap-bold'}>Financing with Snap!</span> Up to 80% Approval Rate</h4>
-                        <h4 className={'snap-list'}><span className={'snap-bold'}>Apply Today</span> Bad Credit or No Credit? is OK!</h4>
-                        <h4 className={'snap-list'}><span className={'snap-bold'}>You can Finance up to $3000 Today</span>, And Shop Right Away</h4>
-                        <h4 className={'snap-list'}><span className={'snap-bold'}>Buy today</span>. Pay over 12 months.</h4>
-                    </div>
-                </Col>
+
+                <div id={'snap-test'}>
+                    <Row>
+                        <Col xl={12}>
+                            <h4 className={'snap-list'}><span className={'snap-bold'}>Financing with Snap!</span> Up to 80% Approval Rate</h4>
+                            <h4 className={'snap-list'}><span className={'snap-bold '}>You can Finance up to $3000 Today</span>, And Shop Right Away</h4>
+                        </Col>
+                        <Col xl={12}>
+                            <h4 className={'snap-list text-right'}><span className={'snap-bold'}>Apply Today</span> Bad Credit or No Credit? is OK!</h4>
+                            <h4 className={'snap-list text-right'}><span className={'snap-bold'}>Buy today</span>. Pay over 12 months!</h4>
+                        </Col>
+                    </Row>
+                </div>
             </Row>
         );
     }
@@ -57,12 +62,12 @@ class Home extends Component {
     static renderInformationAndAddress() {
         return (
             <Row>
-                <Card title="Contact us" style={{ width: 'auto', height: 'auto', fontSize: '1.5vw', margin: '2%' }}>
+                <Card title="Contact us" style={{ width: 'auto', height: 'auto', fontSize: '20px', margin: '2%', boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)' }}>
                     <p><strong>Phone number:</strong> 407-888-9918 </p>
                     <p><strong>Email:</strong> tireoutletfl@gmail.com</p>
                 </Card>
 
-                <Card title="Direction" style={{ width: 'auto', height: 'auto', fontSize: '1.5vw', margin: '2%' }} onClick={() => { window.open('https://www.google.com/maps/search/?api=1&query=tire+outlet+truck+bus+and+car+orlando'); }}>
+                <Card title="Direction" style={{ width: 'auto', height: 'auto', fontSize: '20px', margin: '2%', boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)' }} >
                     <p><strong>Address:</strong> 5495 S Orange Blossom Trail, Orlando, FL 32839 </p>
 
                     <TireOutletMap
@@ -71,6 +76,14 @@ class Home extends Component {
                         containerElement={<div style={{ height: `400px` }} />}
                         mapElement={<div style={{ height: `100%` }} />}
                     />
+                    <div style={{ marginTop: 30}}>
+                        <a href='https://www.google.com/maps/search/?api=1&query=tire+outlet+truck+bus+and+car+orlando'>
+                            <strong>
+                                Take Me There
+                            </strong>
+                        </a>
+                    </div>
+
                 </Card>
             </Row>
         );
@@ -78,11 +91,10 @@ class Home extends Component {
 
     render() {
         return (
-            <div id={'home-test'}>
-
+            <div>
                 <div><img src={TireOutletLogo} alt="Logo" id={'logo_img'} /></div>
 
-                <h1 className={"page-title"}>Welcome to Tire Outlet, We offer the following Services</h1>
+                <h1 style={{fontSize: 40}}> <span className={'snap-bold'}>Welcome to Tire Outlet</span> We offer the following Services</h1>
 
                 <Row className={"home-services"}>
                     {this.renderServices()}
@@ -92,7 +104,6 @@ class Home extends Component {
 
                 <h1 className={"page-title"}> Information and Address </h1>
                 {Home.renderInformationAndAddress()}
-
 
             </div>
         );
