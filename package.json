@@ -1,43 +1,33 @@
 {
-  "name": "tireoutlet",
-  "version": "0.1.0",
-  "private": true,
-  "engines": {
-    "npm": "6.1.0",
-    "node": "8.11.2"
-  },
-  "dependencies": {
-    "antd": "^3.4.4",
-    "babel-plugin-import": "^1.7.0",
-    "eslint-plugin-flowtype": "^2.50.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "less": "^3.0.2",
-    "react": "^16.3.2",
-    "react-device-detect": "^1.5.8",
-    "react-dom": "^16.3.2",
-    "react-google-maps": "^9.4.5",
-    "react-https-redirect": "^1.0.10",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4",
-    "react-transition-group": "^2.3.1",
-    "redux": "^4.0.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "theme": {
-    "primary-color": "#FBC02D"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^9.0.0",
-    "eslint": "^5.5.0",
-    "eslint-plugin-babel": "^5.2.0",
-    "eslint-plugin-react": "^7.11.1"
-  }
+    "name": "tireoutlet",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+        "npm": "6.1.0",
+        "node": "8.11.2"
+    },
+    "dependencies": {
+        "antd": "^3.4.4",
+        "babel-plugin-import": "^1.7.0",
+        "less": "^3.0.2",
+        "react": "^16.3.2",
+        "react-device-detect": "^1.5.8",
+        "react-dom": "^16.3.2",
+        "react-google-maps": "^9.4.5",
+        "react-https-redirect": "^1.0.10",
+        "react-redux": "^5.0.7",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.1.4",
+        "react-transition-group": "^2.3.1",
+        "redux": "^4.0.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "theme": {
+        "primary-color": "#FBC02D"
+    }
 }
