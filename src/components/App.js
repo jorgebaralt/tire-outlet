@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HttpsRedirect from 'react-https-redirect';
 import '../App.css';
 import { isMobile } from 'react-device-detect';
 import { Layout, Menu, Icon, BackTop } from 'antd';
@@ -34,7 +33,6 @@ class App extends Component {
         const { selectedService } = this.props;
 
         return (
-            <HttpsRedirect>
                 <Layout>
                 {/* Navigate up button */}
                     <div>
@@ -120,7 +118,6 @@ class App extends Component {
                         </Footer>
                     </Layout>
                 </Layout>
-            </HttpsRedirect>
         );
     }
 }
