@@ -17,6 +17,13 @@
     .text-right{
         text-align: right;
     }
+    .grow {
+        transition: all .2s ease-in-out;
+    }
+    .grow:hover {
+        transform: scale(1.1);
+    }
+
 
 /*Navigation menu */
     .menu-link{

@@ -21,6 +21,7 @@ class Home extends Component {
                         <Card
                             hoverable
                             style={{ boxShadow: '0 10px 15px 0 rgba(0, 0, 0, 0.19)', width: 'auto', margin: '10%'}}
+                            className={'grow'}
                             cover={<img src={service.image} alt={"Services.."} />}
                         >
                             <Meta
