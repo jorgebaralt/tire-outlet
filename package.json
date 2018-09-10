@@ -8,7 +8,12 @@
     },
     "dependencies": {
         "antd": "^3.4.4",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^9.0.0",
         "babel-plugin-import": "^1.7.0",
+        "eslint": "^5.5.0",
+        "eslint-plugin-babel": "^5.2.0",
+        "eslint-plugin-react": "^7.11.1",
         "less": "^3.0.2",
         "react": "^16.3.2",
         "react-animate-on-scroll": "^2.1.5",
