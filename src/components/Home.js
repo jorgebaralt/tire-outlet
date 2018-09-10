@@ -10,13 +10,32 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const { Meta } = Card;
 class Home extends Component {
 
-    renderServices() {
+    state = {
+        width: window.innerWidth,
+        height: window.innerHeight
+    };
+
+    componentWillMount = () => {
+        this.updateWindowDimensions();
+        console.log(this.state);
+        window.addEventListener('resize', this.updateWindowDimensions);
+    };
+
+    componentWillUnmount = () => {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+        this.updateWindowDimensions();
+    };
+
+    updateWindowDimensions = () => {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+    };
+
+    renderServices = () => {
         const { services } = this.props;
-        console.log(window.innerWidth);
         return services.map((service) => {
             return (
                 <Link to={service.url} key={service.key}>
-                    <ScrollAnimation animateIn='bounceInUp' delay={500} animateOnce={true}>
+                    <ScrollAnimation animateIn='zoomIn' delay={500} animateOnce={true}>
                         <Col xs={24} sm={24} md={12} xl={6} onClick={() => { this.props.selectMenuOption(service.key); }}>
                             <Card
                                 hoverable
@@ -34,9 +53,9 @@ class Home extends Component {
                 </Link>
             );
         });
-    }
+    };
 
-    static renderSnap() {
+    renderSnap = () => {
         return (
             <Row style={{ marginLeft: '2%', marginRight: '2%' }}>
                 <Col m={24} style={{ marginTop: '2.5%', width: '100%', height: 'auto' }}>
@@ -52,8 +71,8 @@ class Home extends Component {
                             <h4 className={'snap-list'}><span className={'snap-bold '}>You can Finance up to $3000 Today</span>, And Shop Right Away</h4>
                         </Col>
                         <Col xl={12}>
-                            <h4 className={'snap-list text-right'}><span className={'snap-bold'}>Apply Today</span> Bad Credit or No Credit? is OK!</h4>
-                            <h4 className={'snap-list text-right'}><span className={'snap-bold'}>Buy today</span>. Pay over 12 months!</h4>
+                            <h4 className={this.state.width >= 1200 ? 'snap-list text-right' : 'snap-list'}><span className={'snap-bold'}>Apply Today</span> Bad Credit or No Credit? is OK!</h4>
+                            <h4 className={this.state.width >= 1200 ? 'snap-list text-right' : 'snap-list'}><span className={'snap-bold'}>Buy today</span>. Pay over 12 months!</h4>
                         </Col>
                     </Row>
                 </div>
@@ -61,7 +80,7 @@ class Home extends Component {
         );
     }
 
-    static renderInformationAndAddress() {
+    renderInformationAndAddress = () => {
         return (
             <Row>
                 <ScrollAnimation animateIn='pulse' duration={2} animateOnce={true}>
@@ -81,16 +100,18 @@ class Home extends Component {
                         />
                         <div style={{ marginTop: 30}}>
                             <a href='https://www.google.com/maps/search/?api=1&query=tire+outlet+truck+bus+and+car+orlando'>
-                                <strong>
-                                    Take Me There
-                                </strong>
+                                <ScrollAnimation animateIn='jello'>
+                                    <strong>
+                                        Take Me There
+                                    </strong>
+                                </ScrollAnimation>
                             </a>
                         </div>
                     </Card>
                 </ScrollAnimation>
             </Row>
         );
-    }
+    };
 
     render() {
         return (
@@ -108,12 +129,12 @@ class Home extends Component {
                 <h1 className={"page-title"}> We also Offer Financing: </h1>
 
                 <ScrollAnimation animateIn='fadeIn' animateOnce={true}>
-                    {Home.renderSnap()}
+                    {this.renderSnap()}
                 </ScrollAnimation>
 
                 <h1 className={"page-title"}> Information and Address </h1>
 
-                {Home.renderInformationAndAddress()}
+                {this.renderInformationAndAddress()}
 
             </div>
         );
