@@ -8,12 +8,11 @@ class Mechanic extends Component {
 		return this.props.mechanicServices.map((service) => (
 				<Col xxl={6} lg={8} md={12} sm={24} key={service.id}>
 					<div
-						className="card"
+						className="card box-shadow"
 						style={{
 							width: 'auto',
 							margin: 5,
 							minHeight: '13vw',
-							height: 'auto'
 						}}
 					>
 						<div className="card-body">
