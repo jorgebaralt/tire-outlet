@@ -41,7 +41,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift1,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -50,7 +50,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift8,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -59,7 +59,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift2,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -70,7 +70,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift4,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -79,7 +79,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift5,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -88,7 +88,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift6,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -99,7 +99,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Wheels1,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -108,7 +108,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Wheels2,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -117,7 +117,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Wheels3,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -128,7 +128,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift7,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -137,7 +137,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift3,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -146,7 +146,7 @@ class LiftingKit extends Component {
                             image={{
                                 src: Lift9,
                                 alt: 'Example 1',
-                                className: 'work-img',
+                                className: 'work-img grow',
                             }}
                         />
                     </Col>
@@ -158,9 +158,7 @@ class LiftingKit extends Component {
     render() {
         return (
             <div>
-
                 <Jumbotron title='Lifting Kits' description='We offer Big Tires, Suspension, Body Lifting, Wheels, of any type, brand. Feel free to come and ask for our prices and help' />
-
                 <h1>Why Should I Lift My Truck?</h1>
                 <hr />
                 {this.renderWhyLift()}
