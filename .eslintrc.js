@@ -1,6 +1,9 @@
 module.exports = {
     "extends": "airbnb",
     "parser": "babel-eslint",
+    "globals": {
+        "window": true
+    },
     "rules": {
         "indent": [0, "tab"],
         "react/jsx-indent-props": [0, "tab"],

@@ -32,91 +32,91 @@ class App extends Component {
         const { selectedService } = this.props;
 
         return (
-                <Layout>
+            <Layout>
                 {/* Navigate up button */}
-                    <div>
-                        <BackTop visibilityHeight={100}>
-                            <div className="ant-back-top-inner">UP</div>
-                        </BackTop>
-                    </div>
+                <div>
+                    <BackTop visibilityHeight={100}>
+                        <div className="ant-back-top-inner">UP</div>
+                    </BackTop>
+                </div>
 
-                    <Sider
-                        trigger={null}
-                        collapsible
-                        collapsed={this.state.collapsed}
-                        className="sider animated bounceInLeft"
-                        style={siderStyle}
-                        breakpoint={{ xs: '600' }}
+                <Sider
+                    trigger={null}
+                    collapsible
+                    collapsed={this.state.collapsed}
+                    className="sider animated bounceInLeft"
+                    style={siderStyle}
+                    breakpoint={{ xs: '600' }}
 
-                    >
-                        {/* TODO : maybe logo here */}
-                        <div id="logo">Tire Outlet </div>
+                >
+                    {/* TODO : maybe logo here */}
+                    <div id="logo">Tire Outlet </div>
 
-                        <Menu className="menu" mode="inline" selectedKeys={selectedService} defaultOpenKeys={[]} onClick={({ key }) => this.props.selectMenuOption(key)} >
-                            <Menu.Item key="Home">
-                                <Link to="/" className={"menu-link"}>
-                                    <Icon type="home" />
-                                    <span className="nav-text menu-title">
-                                        Home
-                                    </span>
+                    <Menu className="menu" mode="inline" selectedKeys={selectedService} defaultOpenKeys={[]} onClick={({ key }) => this.props.selectMenuOption(key)}>
+                        <Menu.Item key="Home">
+                            <Link to="/" className="menu-link">
+                                <Icon type="home" />
+                                <span className="nav-text menu-title">
+                                    Home
+                                </span>
+                            </Link>
+                        </Menu.Item>
+
+                        <SubMenu
+                            key="services"
+                            title={<span><Icon type="setting" /><span className="menu-title">Services</span></span>}
+                        >
+                            <Menu.Item key="Oil Change">
+                                <Link to="/services/oil-change" className="menu-link">
+                                    <Icon type="filter" />
+                                    <span className="menu-title">Oil Change</span>
                                 </Link>
                             </Menu.Item>
 
-                            <SubMenu
-                                key="services"
-                                title={<span><Icon type="setting" /><span className={'menu-title'}>Services</span></span>}
-                            >
-                                <Menu.Item key="Oil Change">
-                                    <Link to="/services/oil-change" className={"menu-link"}>
-                                        <Icon type="filter" />
-                                        <span className={'menu-title'}>Oil Change</span>
-                                    </Link>
-                                </Menu.Item>
+                            <Menu.Item key="Tire Services">
+                                <Link to="/services/tire-services" className="menu-link">
+                                    <Icon type="sync" />
+                                    <span className="menu-title">Tire Services</span>
+                                </Link>
+                            </Menu.Item>
 
-                                <Menu.Item key="Tire Services">
-                                    <Link to="/services/tire-services" className={"menu-link"}>
-                                        <Icon type="sync" />
-                                        <span className={'menu-title'}>Tire Services</span>
-                                    </Link>
-                                </Menu.Item>
+                            <Menu.Item key="Mechanic">
+                                <Link to="/services/mechanic" className="menu-link">
+                                    <Icon type="tool" />
+                                    <span className="menu-title">Mechanic</span>
+                                </Link>
+                            </Menu.Item>
 
-                                <Menu.Item key="Mechanic">
-                                    <Link to="/services/mechanic" className={"menu-link"}>
-                                        <Icon type="tool" />
-                                        <span className={'menu-title'}>Mechanic</span>
-                                    </Link>
-                                </Menu.Item>
-
-                                <Menu.Item key="Lift Kits">
-                                    <Link to="/services/lift" className={"menu-link"}>
-                                        <Icon type="car" />
-                                        <span className={'menu-title'}>Lifting Kit</span>
-                                    </Link>
-                                </Menu.Item>
+                            <Menu.Item key="Lift Kits">
+                                <Link to="/services/lift" className="menu-link">
+                                    <Icon type="car" />
+                                    <span className="menu-title">Lifting Kit</span>
+                                </Link>
+                            </Menu.Item>
 
 
-                            </SubMenu>
-                        </Menu>
-                    </Sider>
-                    <Layout style={layoutStyle}>
-                        <Content style={contentStyle}>
-                            <div>
-                                <Switch>
-                                    <Route path="/services/oil-change" component={OilChange} />
-                                    <Route path="/services/tire-services" component={CarServices} />
-                                    <Route path="/services/mechanic" component={Mechanic} />
-                                    <Route path="/services/lift" component={LiftingKit} />
-                                    <Route path="/" component={Home} />
-                                </Switch>
-                            </div>
-                        </Content>
+                        </SubMenu>
+                    </Menu>
+                </Sider>
+                <Layout style={layoutStyle}>
+                    <Content style={contentStyle}>
+                        <div>
+                            <Switch>
+                                <Route path="/services/oil-change" component={OilChange} />
+                                <Route path="/services/tire-services" component={CarServices} />
+                                <Route path="/services/mechanic" component={Mechanic} />
+                                <Route path="/services/lift" component={LiftingKit} />
+                                <Route path="/" component={Home} />
+                            </Switch>
+                        </div>
+                    </Content>
 
-                        <Footer style={footerStyle}>
-                            <div>Tire Outlet Truck Bus & Car @2018 by Jorge Baralt</div>
-                            <a href="https://www.freepik.com/free-vector/car-repair-icons_1011157.htm">Icons Designed by Freepik</a>
-                        </Footer>
-                    </Layout>
+                    <Footer style={footerStyle}>
+                        <div>Tire Outlet Truck Bus & Car @2018 by Jorge Baralt</div>
+                        <a href="https://www.freepik.com/free-vector/car-repair-icons_1011157.htm">Icons Designed by Freepik</a>
+                    </Footer>
                 </Layout>
+            </Layout>
         );
     }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Row, Col } from 'antd';
 import { connect } from 'react-redux';
+import ImageZoom from 'react-medium-image-zoom';
 import Jumbotron from './Jumbotron';
 import Lift1 from '../images/Lift1.jpeg';
 import Lift2 from '../images/Lift2.jpeg';
@@ -14,7 +15,6 @@ import Lift9 from '../images/Lift9.jpeg';
 import Wheels1 from '../images/Wheels1.jpeg';
 import Wheels2 from '../images/Wheels2.jpeg';
 import Wheels3 from '../images/Wheels3.jpeg';
-import ImageZoom from 'react-medium-image-zoom'
 
 class LiftingKit extends Component {
     renderWhyLift() {
@@ -24,7 +24,7 @@ class LiftingKit extends Component {
 
                     <Card style={{ margin: '0 auto 1%', maxWidth: 900 }}>
                         <Col xxl={14}><h2>{reason.title}</h2></Col>
-                        <Col xxl={10}><p className={'reasons-p'}>{reason.description}</p></Col>
+                        <Col xxl={10}><p className="reasons-p">{reason.description}</p></Col>
                     </Card>
 
                 </Row>
@@ -158,7 +158,7 @@ class LiftingKit extends Component {
     render() {
         return (
             <div>
-                <Jumbotron title='Lifting Kits' description='We offer Big Tires, Suspension, Body Lifting, Wheels, of any type, brand. Feel free to come and ask for our prices and help' />
+                <Jumbotron title="Lifting Kits" description="We offer Big Tires, Suspension, Body Lifting, Wheels, of any type, brand. Feel free to come and ask for our prices and help" />
                 <h1>Why Should I Lift My Truck?</h1>
                 <hr />
                 {this.renderWhyLift()}
