@@ -95,10 +95,13 @@ class Home extends Component {
 								this.state.width >= 1200 ? 'snap-list text-right' : 'snap-list'
 							}
 						>
-							<span className="snap-bold">Apply Today</span> Bad Credit or No Credit? is OK!
+							<span className="snap-bold">Apply Today</span> Bad Credit or No
+							Credit? is OK!
 						</h4>
 						<h4
-							className={this.state.width >= 1200 ? 'snap-list text-right' : 'snap-list'}
+							className={
+								this.state.width >= 1200 ? 'snap-list text-right' : 'snap-list'
+							}
 						>
 							<span className="snap-bold">Buy today</span>. Pay over 12 months!
 						</h4>
@@ -162,15 +165,18 @@ class Home extends Component {
 				</ScrollAnimation>
 
 				<Row className="home-services">{this.renderServices()}</Row>
-
-				<h1 className="page-title"> We also Offer Financing: </h1>
+				<ScrollAnimation animateIn="fadeIn" animateOnce>
+					<h1 className="page-title"> We also Offer Financing: </h1>
+				</ScrollAnimation>
 
 				<ScrollAnimation animateIn="fadeIn" animateOnce>
 					{this.renderSnap()}
 				</ScrollAnimation>
-
+				
+				<ScrollAnimation animateIn="fadeIn" animateOnce>
 				<h1 className="page-title"> Information and Address </h1>
-
+				</ScrollAnimation>
+				
 				{this.renderInformationAndAddress()}
 			</div>
 		);
