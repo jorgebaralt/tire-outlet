@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Row, Col, Card } from 'antd';
+import ImageZoom from 'react-medium-image-zoom';
 import Jumbotron from './Jumbotron';
 import Tires1 from '../images/Tires4.jpeg';
 import Tires2 from '../images/Tires5.jpeg';
@@ -13,7 +14,7 @@ class CarServices extends Component {
 	renderTireServices() {
 		return this.props.tireServices.map((service) => (
 				<Row key={service.id}>
-				<Card style={{ width: 'auto', margin: '0 auto 1%', maxWidth: 1200 }} className="box-shadow">
+					<Card style={{ width: 'auto', margin: '0 auto 1%', maxWidth: 1200 }} className="box-shadow">
 						<Col xxl={12}>
 							<h4 className="service-title">{service.title}</h4>
 							<div className="tire-service-price">{service.price}</div>
@@ -31,24 +32,61 @@ class CarServices extends Component {
 			<Row>
 				<Row>
 					<Col xxl={8} md={8} s={24}>
-						<img src={Tires1} alt="Example 1" className="work-img" />
+
+						<ImageZoom
+							image={{
+								src: Tires1,
+								alt: 'Example 1',
+								className: 'work-img grow',
+							}}
+						/>
 					</Col>
 					<Col xxl={8} md={8} s={24}>
-						<img src={Allignment1} alt="Example 2" className="work-img" />
+						<ImageZoom
+							image={{
+								src: Allignment1,
+								alt: 'Example 1',
+								className: 'work-img grow',
+							}}
+						/>
 					</Col>
 					<Col xxl={8} md={8} s={24}>
-						<img src={TruckBalance} alt="Example 3" className="work-img" />
+						<ImageZoom
+							image={{
+								src: TruckBalance,
+								alt: 'Example 1',
+								className: 'work-img grow',
+							}}
+						/>
 					</Col>
 				</Row>
 				<Row>
 					<Col xxl={8} md={8} s={24}>
-						<img src={Tires2} alt="Example 1" className="work-img" />
+						<ImageZoom
+							image={{
+								src: Tires2,
+								alt: 'Example 1',
+								className: 'work-img grow',
+							}}
+						/>
 					</Col>
 					<Col xxl={8} md={8} s={24}>
-						<img src={Allignment2} alt="Example 2" className="work-img" />
+						<ImageZoom
+							image={{
+								src: Allignment2,
+								alt: 'Example 1',
+								className: 'work-img grow',
+							}}
+						/>
 					</Col>
 					<Col xxl={8} md={8} s={24}>
-						<img src={Tires3} alt="Example 3" className="work-img" />
+						<ImageZoom
+							image={{
+								src: Tires3,
+								alt: 'Example 1',
+								className: 'work-img grow',
+							}}
+						/>
 					</Col>
 				</Row>
 			</Row>
